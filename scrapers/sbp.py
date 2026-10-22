@@ -8,7 +8,7 @@ import datetime as dt
 import io
 import re
 
-from .common import NotFound, as_on, fetch, now_pkt, num, parse_date, save_raw, text_of, window
+from .common import as_on, fetch, now_pkt, num, parse_date, save_raw, text_of, window
 
 RATE_PAGES = [
     "https://www.sbp.org.pk/",
@@ -57,10 +57,10 @@ def parse_rates(text: str) -> dict:
         if m:
             r["overnightRepo"] = {"v": num(m.group(1)), "asOf": as_on(war_block)}
 
-    res_block = window(text, r"Reserves", 700)
+    res_block = window(text, r"Foreign\s+Exchange\s+Reserves", 500) or window(text, r"Reserves", 700)
     if res_block:
         vals = {}
-        for key, lab in (("sbp", r"SBP'?s?\s*Reserves"), ("banks", r"Bank'?s?\s*Reserves"), ("total", r"Total\s*Reserves")):
+        for key, lab in (("sbp", r"SBP[’'`]?s?\s*Reserves"), ("banks", r"Bank[’'`]?s?\s*Reserves"), ("total", r"Total\s*Reserves")):
             m = re.search(lab + r"[\s\S]{0,80}?([\d,]{4,}\.\d)", res_block, re.I)
             if m:
                 vals[key] = num(m.group(1))
@@ -79,18 +79,22 @@ def parse_rates(text: str) -> dict:
             k["asOf"] = as_on(kib)
             r["kibor"] = k
 
-    m2m = window(text, r"M2M", 320)
+    # 'USD/ PKR Rates | As on 21- Oct - 2026 | M2M Revaluation Rate | 276.8611 | Weighted Average Rate | BID | ... | Offer | ...'
+    usd = window(text, r"USD\s*/\s*PKR\s+Rates", 420)
+    usd_date = as_on(usd) if usd else None
+    m2m = window(usd or text, r"M2M", 200)
     if m2m:
         m = re.search(r"(\d{3}\.\d{2,4})", m2m)
         if m:
-            r["usdM2M"] = {"v": num(m.group(1)), "asOf": as_on(m2m)}
-    wa = window(text, r"Weighted\s+Average\s+Rate", 320)
+            r["usdM2M"] = {"v": num(m.group(1)), "asOf": usd_date}
+    wa = window(usd or text, r"Weighted\s+Average\s+Rate", 200)
     if wa:
         vals = re.findall(r"(\d{3}\.\d{2,4})", wa)
         if len(vals) >= 2:
-            r["usdWA"] = {"bid": num(vals[0]), "offer": num(vals[1]), "asOf": as_on(wa)}
+            r["usdWA"] = {"bid": num(vals[0]), "offer": num(vals[1]), "asOf": usd_date}
 
-    mtb = window(text, r"(?:MTB|Market\s+Treasury\s+Bills?)", 700)
+    # The results table ('MTBs | Tenor | Cut-off Yield ... (as on Oct 14, 2026)'), not the 'Upcoming Auction' list.
+    mtb = window(text, r"MTBs\s+Tenor", 400) or window(text, r"Cut-off\s+Rates\s+in\s+the\s+Latest", 500)
     if mtb:
         rows = _tenor_rows(mtb, "M")
         tb = {f"m{t}": rows[t][0] for t in (1, 3, 6, 12) if t in rows}
@@ -98,7 +102,7 @@ def parse_rates(text: str) -> dict:
             tb["asOf"] = as_on(mtb)
             r["tbill"] = tb
 
-    pib = window(text, r"(?:Fixed[-\s]*Rate\s+)?PIB", 900)
+    pib = window(text, r"Fixed\s*-?\s*Rate\s+PIB\s+Tenor", 500) or window(text, r"Fixed\s*-?\s*Rate\s+PIB", 600)
     if pib:
         # Stop before the floating-rate PIB block so its numbers are not mixed in.
         cut = re.search(r"Floating", pib, re.I)
@@ -192,11 +196,14 @@ def open_market(today: dt.date | None = None) -> dict:
             tried.append(url)
             try:
                 pdf = fetch(url, binary=True, tries=1, timeout=30)
-            except NotFound:
-                continue
             except Exception:
                 continue
-            text = _pdf_text(pdf)
+            if not pdf.startswith(b"%PDF"):
+                continue  # a 'not found' page served with status 200
+            try:
+                text = _pdf_text(pdf)
+            except Exception:
+                continue
             save_raw("sbp/open_market.txt", text[:20000])
             rates = parse_open_market(text)
             if rates:

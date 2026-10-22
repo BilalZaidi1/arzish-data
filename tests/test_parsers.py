@@ -21,6 +21,8 @@ FIX = Path(__file__).parent / "fixtures"
         ("2026-10-21", "2026-10-21"),
         ("As on 21-Oct-2026", "2026-10-21"),
         ("Sept 3, 2026", "2026-09-03"),
+        ("As on 21- Oct - 26", "2026-10-21"),
+        ("09- October - 2026", "2026-10-09"),
     ],
 )
 def test_parse_date(raw, iso):
@@ -33,62 +35,17 @@ def test_num():
     assert num("Bids rejected") is None
 
 
-SBP_TEXT = """Economic Data
-SBP Policy Rate
-11.50% p.a.
-SBP Overnight Reverse Repo (Ceiling) Rate
-12.50% p.a.
-SBP Overnight Repo (Floor) Rate
-10.50% p.a.
-Weighted-average Overnight Repo Rate
-11.17% p.a.
-As on 20-Oct-26
-Reserves (USD Million)
-SBP's Reserves 21,469.5
-Bank's Reserves 5,393.8
-Total Reserves 26,863.3
-As on 09-October-2026
-KIBOR
-As on 21-Oct-26
-Tenor Bid Offer
-3-M 11.76 12.01
-6-M 12.19 12.44
-12-M 12.27 12.77
-Exchange Rate
-M2M Revaluation Rate
-276.8611
-As on 21-Oct-2026
-Weighted Average Rate
-Bid 276.5504 Offer 277.0072
-MTB Cut-off Yields
-As on Oct 14, 2026
-1-M 11.5003%
-3-M 11.9999%
-6-M 12.3989%
-12-M 12.4999%
-Fixed Rate PIB Cut-off Rates
-As on September 18, 2026
-2-Y 12.3990%
-3-Y 12.4900%
-5-Y 12.4900%
-10-Y 12.5000%
-15-Y Bids rejected
-Floating Rate PIB
-2-Y Bids rejected
-"""
-
-
-def test_sbp_rates():
-    r = sbp.parse_rates(SBP_TEXT)
-    assert r["policyRate"] == 11.5
-    assert r["ceiling"] == 12.5 and r["floor"] == 10.5
+def test_sbp_rates_real_page():
+    """The SBP homepage text as scraped on 22 Oct 2026."""
+    r = sbp.parse_rates((FIX / "sbp_home.txt").read_text(encoding="utf-8"))
+    assert r["policyRate"] == 11.5 and r["ceiling"] == 12.5 and r["floor"] == 10.5
     assert r["overnightRepo"] == {"v": 11.17, "asOf": "2026-10-20"}
-    assert r["reserves"]["total"] == 26863.3 and r["reserves"]["asOf"] == "2026-10-09"
-    assert r["kibor"]["m6"] == {"bid": 12.19, "offer": 12.44} and r["kibor"]["asOf"] == "2026-10-21"
+    assert r["reserves"] == {"sbp": 21469.5, "banks": 5393.8, "total": 26863.3, "asOf": "2026-10-09"}
+    assert r["kibor"]["asOf"] == "2026-10-21" and r["kibor"]["m12"] == {"bid": 12.27, "offer": 12.77}
     assert r["usdM2M"] == {"v": 276.8611, "asOf": "2026-10-21"}
-    assert r["usdWA"]["bid"] == 276.5504 and r["usdWA"]["offer"] == 277.0072
+    assert r["usdWA"] == {"bid": 276.5504, "offer": 277.0072, "asOf": "2026-10-21"}
     assert r["tbill"] == {"m1": 11.5003, "m3": 11.9999, "m6": 12.3989, "m12": 12.4999, "asOf": "2026-10-14"}
-    assert r["pib"]["y10"] == 12.5 and "y15" not in r["pib"] and r["pib"]["asOf"] == "2026-09-18"
+    assert r["pib"] == {"y2": 12.399, "y3": 12.49, "y5": 12.49, "y10": 12.5, "asOf": "2026-09-18"}
 
 
 def test_open_market():
@@ -174,9 +131,9 @@ def test_effr_and_bls():
     assert us.parse_bls(doc) == {"yoy": 3.12, "month": "2026-09"}
 
 
-def test_pbs_cpi():
-    text = "CPI general inflation increased by 10.26 % on year-on-year basis in September 2026 as compared to an increase of 9.50% in the previous month"
-    assert pbs.parse_cpi(text)["yoy"] == 10.26
+def test_pbs_cpi_real_release():
+    """The PBS press release for September 2026: headline 10.26 (urban 10.12, rural 10.47)."""
+    assert pbs.parse_cpi((FIX / "pbs_cpi_sep2026.txt").read_text(encoding="utf-8"))["yoy"] == 10.26
 
 
 # ------------------------------------------------------------------ merge rules

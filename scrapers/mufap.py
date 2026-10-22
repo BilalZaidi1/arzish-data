@@ -10,7 +10,7 @@ from urllib.parse import parse_qs, urlparse
 
 from bs4 import BeautifulSoup
 
-from .common import fetch, num, parse_date, save_raw
+from .common import Blocked, fetch, num, parse_date, save_raw
 
 URL = "https://www.mufap.com.pk/Industry/IndustryStatDaily?tab=3"
 SOURCE = {"label": "MUFAP", "url": URL}
@@ -112,7 +112,29 @@ def parse_navs(html: str) -> dict:
     return {"reportDate": report, "asOf": dates[-1] if dates else report, "funds": funds}
 
 
+HOSTS = ["https://www.mufap.com.pk", "https://mufap.com.pk", "https://beta.mufap.com.pk"]
+
+
 def navs() -> dict:
-    html = fetch(URL, timeout=60)
-    save_raw("mufap/head.html", html[:40000])
-    return parse_navs(html)
+    """Try MUFAP's hosts in turn, visiting the home page first (cookies) like a browser would."""
+    errors = []
+    for host in HOSTS:
+        url = f"{host}/Industry/IndustryStatDaily?tab=3"
+        try:
+            try:
+                fetch(host + "/", tries=1, timeout=30)
+            except Exception:
+                pass
+            html = fetch(url, timeout=60, headers={"Referer": host + "/"})
+        except Blocked as e:
+            save_raw("mufap/blocked.html", e.body)
+            errors.append(f"{host}: HTTP {e.status}")
+            continue
+        except Exception as e:
+            errors.append(f"{host}: {e}")
+            continue
+        save_raw("mufap/head.html", html[:40000])
+        out = parse_navs(html)
+        out["url"] = url
+        return out
+    raise RuntimeError("; ".join(errors))

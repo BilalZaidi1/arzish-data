@@ -29,24 +29,41 @@ def session() -> requests.Session:
     global _session
     if _session is None:
         s = requests.Session()
-        s.headers.update({"User-Agent": UA, "Accept-Language": "en-US,en;q=0.9"})
+        s.headers.update({
+            "User-Agent": UA,
+            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,application/pdf;q=0.9,*/*;q=0.8",
+            "Accept-Language": "en-US,en;q=0.9",
+            "Upgrade-Insecure-Requests": "1",
+        })
         _session = s
     return _session
 
 
-def fetch(url: str, *, binary: bool = False, tries: int = 3, timeout: int = 45, max_bytes: int = 20_000_000):
-    """GET a URL with retries. Raises NotFound on 404 so callers can probe dated URLs."""
+class Blocked(Exception):
+    """The site refused the request (403/429); `body` holds the start of its answer."""
+
+    def __init__(self, url: str, status: int, body: str):
+        super().__init__(f"{url}: HTTP {status}")
+        self.status = status
+        self.body = body
+
+
+def fetch(url: str, *, binary: bool = False, tries: int = 3, timeout: int = 45, max_bytes: int = 20_000_000, headers: dict | None = None):
+    """GET a URL with retries. Raises NotFound on 404 so callers can probe dated URLs,
+    and Blocked on 403/429 (not retried: a block does not clear in seconds)."""
     last: Exception | None = None
     for attempt in range(tries):
         try:
-            r = session().get(url, timeout=timeout)
+            r = session().get(url, timeout=timeout, headers=headers)
+            if r.status_code in (403, 429):
+                raise Blocked(url, r.status_code, r.text[:3000])
             if r.status_code == 404:
                 raise NotFound(url)
             r.raise_for_status()
             if len(r.content) > max_bytes:
                 raise ValueError(f"response too large ({len(r.content)} bytes)")
             return r.content if binary else r.text
-        except NotFound:
+        except (NotFound, Blocked):
             raise
         except Exception as e:  # network errors, 5xx, blocks
             last = e
@@ -111,7 +128,7 @@ def parse_date(s: str | None) -> str | None:
     s = s.strip().replace("–", "-").replace("—", "-")
     pats = [
         # 21-Oct-26, 09-October-2026, 21 Oct 2026, 21.10.2026 handled below
-        (r"(\d{1,2})[-\s./]([A-Za-z]{3,9})\.?[-\s./,]+(\d{2,4})", "dmy_name"),
+        (r"(\d{1,2})\s*[-\s./]\s*([A-Za-z]{3,9})\.?\s*[-\s./,]\s*(\d{2,4})", "dmy_name"),
         # Oct 14, 2026 / September 18, 2026 / Oct 21 2026
         (r"([A-Za-z]{3,9})\.?\s+(\d{1,2}),?\s+(\d{4})", "mdy_name"),
         # 2026-10-21
