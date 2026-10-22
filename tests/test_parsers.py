@@ -48,6 +48,12 @@ def test_sbp_rates_real_page():
     assert r["pib"] == {"y2": 12.399, "y3": 12.49, "y5": 12.49, "y10": 12.5, "asOf": "2026-09-18"}
 
 
+def test_open_market_list_real_json():
+    pairs = sbp.parse_list((FIX / "om_list.json").read_text(encoding="utf-8"))
+    assert pairs[0] == ("2026-10-21", "https://www.sbp.org.pk/assets/document/Open_Market_Closing_Exchange_Rates_21-October-2026.pdf")
+    assert all(a[0] >= b[0] for a, b in zip(pairs, pairs[1:]))
+
+
 def test_open_market_real_file():
     text = (FIX / "open_market_13oct2026.txt").read_text(encoding="utf-8")
     r = sbp.parse_open_market(text)

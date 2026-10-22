@@ -197,20 +197,45 @@ INDEX = "https://www.sbp.org.pk/economic-data/open-market-closing-exchange-rates
 DATA_URL = "https://www.sbp.org.pk/economic-data/get-economic-data-by-cat-external?slug=open-market-closing-exchange-rates"
 
 
-def _index_links() -> list[str]:
-    """PDF links from SBP's listing data, newest first when dates are present."""
+def parse_list(raw: str) -> list[tuple[str, str]]:
+    """(date, pdf url) pairs from SBP's listing JSON, newest first. Entries look like
+    {"date": "2026-10-21", "attachment": {"url": ".../Open_Market_Closing_Exchange_Rates_21-October-2026.pdf"}}."""
+    import json as _json
+
+    out: list[tuple[str, str]] = []
+
+    def walk(node):
+        if isinstance(node, dict):
+            url = (node.get("attachment") or {}).get("url") if isinstance(node.get("attachment"), dict) else None
+            if isinstance(node.get("date"), str) and isinstance(url, str) and url.lower().endswith(".pdf"):
+                d = parse_date(node["date"])
+                if d:
+                    out.append((d, url))
+            for v in node.values():
+                walk(v)
+        elif isinstance(node, list):
+            for v in node:
+                walk(v)
+
+    try:
+        walk(_json.loads(raw))
+    except ValueError:
+        # Truncated or odd JSON: fall back to reading entries field by field.
+        pat = r'"date"\s*:\s*"([^"]+)"[^{}]*?"attachment"\s*:\s*\{[^{}]*?"url"\s*:\s*"([^"]+?\.pdf)"'
+        for d, u in re.findall(pat, raw, re.I):
+            iso = parse_date(d)
+            if iso:
+                out.append((iso, u.replace("\\/", "/")))
+    return sorted(set(out), reverse=True)
+
+
+def _index_links() -> list[tuple[str, str]]:
     try:
         raw = fetch(DATA_URL, tries=2, timeout=40, headers={"Accept": "application/json, text/javascript, */*; q=0.01", "X-Requested-With": "XMLHttpRequest", "Referer": INDEX})
     except Exception:
         return []
     save_raw("sbp/om_list.json", raw[:200000])
-    urls = re.findall(r"""https?:\\?/\\?/[^"'\s<>]+?\.pdf""", raw, re.I)
-    out = []
-    for u in urls:
-        u = u.replace("\\/", "/")
-        if "open-market" in u.lower() and u not in out:
-            out.append(u)
-    return out
+    return parse_list(raw)
 
 
 def open_market(today: dt.date | None = None) -> dict:
@@ -218,11 +243,9 @@ def open_market(today: dt.date | None = None) -> dict:
     today = today or now_pkt().date()
     tried = []
     listed = _index_links()
-    by_date = {}
-    for u in listed:
-        d = parse_date(u.rsplit("/", 1)[-1].replace("open-market-closing-exchange-rates-", "").replace(".pdf", ""))
-        if d:
-            by_date.setdefault(d, u)
+    by_date: dict[str, str] = {}
+    for d, u in listed:
+        by_date.setdefault(d, u)
     for back in range(0, 10):
         d = today - dt.timedelta(days=back)
         base = "https://www.sbp.org.pk/assets/document/open-market-closing-exchange-rates"
