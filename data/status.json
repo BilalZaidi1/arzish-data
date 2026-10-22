@@ -1,0 +1,43 @@
+{
+ "builtAt": "2026-10-22T07:50:22Z",
+ "sources": {
+  "sbp": {
+   "ok": true,
+   "at": "2026-10-22T07:49:33Z"
+  },
+  "sbp_open": {
+   "ok": false,
+   "at": "2026-10-22T07:49:44Z",
+   "error": "PDFSyntaxError: No /Root object! - Is this really a PDF?"
+  },
+  "mufap": {
+   "ok": false,
+   "at": "2026-10-22T07:49:54Z",
+   "error": "RuntimeError: https://www.mufap.com.pk/Industry/IndustryStatDaily?tab=3: 403 Client Error: Forbidden for url: https://www.mufap.com.pk/Industry/IndustryStatDaily?tab=3"
+  },
+  "cdns": {
+   "ok": true,
+   "at": "2026-10-22T07:50:03Z"
+  },
+  "fx": {
+   "ok": true,
+   "at": "2026-10-22T07:50:03Z"
+  },
+  "pbs": {
+   "ok": true,
+   "at": "2026-10-22T07:50:05Z"
+  },
+  "treasury": {
+   "ok": true,
+   "at": "2026-10-22T07:50:21Z"
+  },
+  "nyfed": {
+   "ok": true,
+   "at": "2026-10-22T07:50:22Z"
+  },
+  "bls": {
+   "ok": true,
+   "at": "2026-10-22T07:50:22Z"
+  }
+ }
+}
