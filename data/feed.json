@@ -1,6 +1,6 @@
 {
  "v": 1,
- "builtAt": "2026-10-22T07:55:20Z",
+ "builtAt": "2026-10-22T07:59:46Z",
  "market": {
   "asOf": "2026-10-22",
   "fx": {
@@ -317,41 +317,42 @@
  "status": {
   "sbp": {
    "ok": true,
-   "at": "2026-10-22T07:53:29Z"
+   "at": "2026-10-22T07:57:09Z"
   },
   "sbp_open": {
    "ok": false,
-   "at": "2026-10-22T07:54:47Z",
-   "error": "RuntimeError: open-market PDF not found (tried 27 URLs)"
+   "at": "2026-10-22T07:59:16Z",
+   "error": "RuntimeError: open-market PDF not found (tried 40 URLs; 0 links on SBP's list)"
   },
   "mufap": {
    "ok": false,
-   "at": "2026-10-22T07:54:48Z",
-   "error": "RuntimeError: https://www.mufap.com.pk: HTTP 403; https://mufap.com.pk: HTTP 403; https://beta.mufap.com.pk: HTTP 403"
+   "at": "2026-10-22T07:59:16Z",
+   "error": "disabled: MUFAP blocks automated access (Cloudflare challenge)",
+   "disabled": true
   },
   "cdns": {
    "ok": true,
-   "at": "2026-10-22T07:54:57Z"
+   "at": "2026-10-22T07:59:25Z"
   },
   "fx": {
    "ok": true,
-   "at": "2026-10-22T07:54:57Z"
+   "at": "2026-10-22T07:59:25Z"
   },
   "pbs": {
    "ok": true,
-   "at": "2026-10-22T07:55:00Z"
+   "at": "2026-10-22T07:59:28Z"
   },
   "treasury": {
    "ok": true,
-   "at": "2026-10-22T07:55:19Z"
+   "at": "2026-10-22T07:59:45Z"
   },
   "nyfed": {
    "ok": true,
-   "at": "2026-10-22T07:55:19Z"
+   "at": "2026-10-22T07:59:46Z"
   },
   "bls": {
    "ok": true,
-   "at": "2026-10-22T07:55:20Z"
+   "at": "2026-10-22T07:59:46Z"
   }
  },
  "review": [
