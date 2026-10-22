@@ -2,7 +2,8 @@
 
 Daily market data for **Arzish**, a portfolio forecast analyzer for Pakistani investors.
 Free, keyless sources only. Scrapers run on GitHub Actions every morning (06:40 Pakistan time, with
-a retry at 07:40), and a scheduled Claude agent checks the results and loads them into the Arzish app.
+a retry at 07:40) and after the PSX close on trading days (16:50), and a scheduled Claude agent checks
+the results each morning (about 08:45) and loads them into the Arzish app.
 
 ## What is collected
 
