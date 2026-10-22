@@ -181,15 +181,42 @@ def _pdf_text(data: bytes) -> str:
         return "\n".join((p.extract_text() or "") for p in pdf.pages[:3])
 
 
+INDEX = "https://www.sbp.org.pk/economic-data/open-market-closing-exchange-rates"
+
+
+def _index_links() -> list[str]:
+    """PDF links SBP's listing page exposes (it fills its table by script, so also scan inline data)."""
+    try:
+        html = fetch(INDEX, tries=2, timeout=40)
+    except Exception:
+        return []
+    save_raw("sbp/om_index.html", html[:120000])
+    links = re.findall(r"""(?:https?://www\.sbp\.org\.pk)?/[^"'\s<>]*open-market-closing-exchange-rates[^"'\s<>]*\.pdf""", html, re.I)
+    out = []
+    for u in links:
+        u = u if u.startswith("http") else "https://www.sbp.org.pk" + u
+        if u not in out:
+            out.append(u)
+    return out
+
+
 def open_market(today: dt.date | None = None) -> dict:
     """SBP's daily 'open market closing exchange rates' PDF (Exchange Companies Association of Pakistan)."""
     today = today or now_pkt().date()
     tried = []
-    for back in range(0, 9):
+    listed = _index_links()
+    by_date = {}
+    for u in listed:
+        d = parse_date(u.rsplit("/", 1)[-1].replace("open-market-closing-exchange-rates-", "").replace(".pdf", ""))
+        if d:
+            by_date.setdefault(d, u)
+    for back in range(0, 10):
         d = today - dt.timedelta(days=back)
-        candidates = [
-            f"https://www.sbp.org.pk/assets/document/open-market-closing-exchange-rates-{d.day:02d}-{d.strftime('%B').lower()}-{d.year}.pdf",
-            f"https://www.sbp.org.pk/assets/document/open-market-closing-exchange-rates-{d.day}-{d.strftime('%B').lower()}-{d.year}.pdf",
+        base = "https://www.sbp.org.pk/assets/document/open-market-closing-exchange-rates"
+        candidates = ([by_date[d.isoformat()]] if d.isoformat() in by_date else []) + [
+            f"{base}-{d.day:02d}-{d.strftime('%B').lower()}-{d.year}.pdf",
+            f"{base}-{d.day:02d}-{d.strftime('%B')}-{d.year}.pdf",
+            f"{base}-{d.day}-{d.strftime('%B').lower()}-{d.year}.pdf",
             f"https://www.sbp.org.pk/ecodata/rates/ECAP/{d.year}/{d.strftime('%b')}/{d.day:02d}-{d.strftime('%b')}-{d.strftime('%y')}.pdf",
         ]
         for url in candidates:
@@ -208,4 +235,4 @@ def open_market(today: dt.date | None = None) -> dict:
             rates = parse_open_market(text)
             if rates:
                 return {"rates": rates, "asOf": parse_date(text[:600]) or d.isoformat(), "url": url}
-    raise RuntimeError(f"open-market PDF not found (tried {len(tried)} URLs)")
+    raise RuntimeError(f"open-market PDF not found (tried {len(tried)} URLs; {len(listed)} links on SBP's list)")

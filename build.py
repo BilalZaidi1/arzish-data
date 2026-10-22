@@ -12,6 +12,7 @@ from __future__ import annotations
 
 import copy
 import json
+import os
 import sys
 import traceback
 from pathlib import Path
@@ -78,7 +79,13 @@ def build() -> dict:
 
     rates = run("sbp", sbp.rates, status)
     open_mkt = run("sbp_open", sbp.open_market, status)
-    funds = run("mufap", mufap.navs, status)
+    # MUFAP serves a Cloudflare bot challenge to automated requests, so it is not scraped unless
+    # MUFAP grants access (then set MUFAP_ENABLED=1 in the workflow).
+    if os.environ.get("MUFAP_ENABLED") == "1":
+        funds = run("mufap", mufap.navs, status)
+    else:
+        funds = None
+        status["mufap"] = {"ok": False, "at": utc_iso(), "error": "disabled: MUFAP blocks automated access (Cloudflare challenge)", "disabled": True}
     nss = run("cdns", cdns.rates, status)
     fxd = run("fx", fx.latest, status)
     cpi = run("pbs", pbs.latest_cpi, status)
