@@ -48,6 +48,15 @@ def test_sbp_rates_real_page():
     assert r["pib"] == {"y2": 12.399, "y3": 12.49, "y5": 12.49, "y10": 12.5, "asOf": "2026-09-18"}
 
 
+def test_open_market_real_file():
+    text = (FIX / "open_market_13oct2026.txt").read_text(encoding="utf-8")
+    r = sbp.parse_open_market(text)
+    assert r["USD"] == {"buy": 277.55, "sell": 278.66} and r["AED"] == {"buy": 75.53, "sell": 76.15}
+    assert r["JPY"] == {"buy": 1.74, "sell": 1.79} and set(r) == {"USD", "EUR", "GBP", "JPY", "AED", "SAR"}
+    from scrapers.common import parse_date
+    assert parse_date(text[:600]) == "2026-10-13"
+
+
 def test_open_market():
     text = "OPEN MARKET CLOSING RATES 21-10-2026\nCurrency Buying Selling\nU.S. Dollar 278.70 279.40\nEuro 322.10 325.00\nU.K. Pound 371.00 374.50\nU.A.E. Dirham 75.80 76.40\nSaudi Riyal 74.10 74.70\n"
     r = sbp.parse_open_market(text)

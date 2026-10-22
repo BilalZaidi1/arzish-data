@@ -147,6 +147,8 @@ def rates() -> dict:
 
 # ---------------------------------------------------------------- open market (kerb) rates
 
+OM_CODES = ("USD", "EUR", "GBP", "AED", "SAR", "JPY", "CAD", "AUD", "CNY", "QAR", "KWD", "OMR", "BHD", "CHF", "MYR")
+
 OM_CURRENCIES = {
     "USD": r"U\.?\s*S\.?\s*Dollar|US\s*\$",
     "EUR": r"\bEuro\b",
@@ -164,8 +166,17 @@ OM_CURRENCIES = {
 
 
 def parse_open_market(text: str) -> dict:
+    """Rows like 'USD 277.55 278.66' (current format) or 'U.S. Dollar 277.55 278.66' (older files)."""
     out = {}
+    for code in OM_CODES:
+        m = re.search(r"\b%s\b[^\n\d]{0,12}(\d{1,4}\.\d{1,4})\s+(\d{1,4}\.\d{1,4})" % code, text)
+        if m:
+            buy, sell = num(m.group(1)), num(m.group(2))
+            if buy and sell and 0.5 * sell <= buy <= sell * 1.05:
+                out[code] = {"buy": buy, "sell": sell}
     for code, pat in OM_CURRENCIES.items():
+        if code in out:
+            continue
         m = re.search(r"(?:%s)[^\n\d]{0,40}(\d{1,4}\.\d{1,4})\s+(\d{1,4}\.\d{1,4})" % pat, text, re.I)
         if m:
             buy, sell = num(m.group(1)), num(m.group(2))
@@ -182,20 +193,22 @@ def _pdf_text(data: bytes) -> str:
 
 
 INDEX = "https://www.sbp.org.pk/economic-data/open-market-closing-exchange-rates"
+# The listing page fills its table from this JSON endpoint (seen in the page's own script).
+DATA_URL = "https://www.sbp.org.pk/economic-data/get-economic-data-by-cat-external?slug=open-market-closing-exchange-rates"
 
 
 def _index_links() -> list[str]:
-    """PDF links SBP's listing page exposes (it fills its table by script, so also scan inline data)."""
+    """PDF links from SBP's listing data, newest first when dates are present."""
     try:
-        html = fetch(INDEX, tries=2, timeout=40)
+        raw = fetch(DATA_URL, tries=2, timeout=40, headers={"Accept": "application/json, text/javascript, */*; q=0.01", "X-Requested-With": "XMLHttpRequest", "Referer": INDEX})
     except Exception:
         return []
-    save_raw("sbp/om_index.html", html[:120000])
-    links = re.findall(r"""(?:https?://www\.sbp\.org\.pk)?/[^"'\s<>]*open-market-closing-exchange-rates[^"'\s<>]*\.pdf""", html, re.I)
+    save_raw("sbp/om_list.json", raw[:200000])
+    urls = re.findall(r"""https?:\\?/\\?/[^"'\s<>]+?\.pdf""", raw, re.I)
     out = []
-    for u in links:
-        u = u if u.startswith("http") else "https://www.sbp.org.pk" + u
-        if u not in out:
+    for u in urls:
+        u = u.replace("\\/", "/")
+        if "open-market" in u.lower() and u not in out:
             out.append(u)
     return out
 
