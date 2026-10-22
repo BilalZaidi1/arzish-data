@@ -10,7 +10,7 @@ scheduled Claude agent checks the results and loads them into the Arzish app.
 |---|---|---|
 | SBP policy rate, corridor, KIBOR, T-bill and PIB cut-offs, USD/PKR (M2M and weighted average), reserves | [State Bank of Pakistan](https://www.sbp.org.pk/) homepage rates block | Daily |
 | Open-market (kerb) buying and selling rates | SBP's daily *open market closing exchange rates* PDF | Daily |
-| NAVs of every open-end fund, VPS and employer pension sub-fund | [MUFAP](https://www.mufap.com.pk/Industry/IndustryStatDaily?tab=3) | Daily (report around 22:15 PKT) |
+| NAVs of every open-end fund, VPS and employer pension sub-fund | [MUFAP](https://www.mufap.com.pk/Industry/IndustryStatDaily?tab=3) | **Off.** MUFAP answers automated requests with a Cloudflare bot challenge, so it is not scraped. The code is kept; set `MUFAP_ENABLED=1` in the workflow if MUFAP grants access. |
 | National Savings profit rates (page text, summary image and scheme PDFs) | [CDNS](https://savings.gov.pk/latest-profit-rates/) | When CDNS changes them |
 | Exchange rates, spot gold and silver, crypto prices | [fawazahmed0/exchange-api](https://github.com/fawazahmed0/exchange-api) (CC0) | Daily |
 | Pakistan CPI inflation (year on year) | [Pakistan Bureau of Statistics](https://www.pbs.gov.pk/) monthly press release | Monthly |
@@ -18,6 +18,10 @@ scheduled Claude agent checks the results and loads them into the Arzish app.
 
 Not collected: PSX share prices and index levels, which need a PSX market-data licence to show in a
 public app, and copyrighted index levels such as the S&P 500.
+
+Two things are added by the nightly Claude agent rather than a scraper, because they are published as
+an image or in news reports: the National Savings rates the page text does not spell out (read from
+CDNS's summary image) and the Sarafa gold and silver rate (APGJSA, as reported by Business Recorder).
 
 ## Files
 
