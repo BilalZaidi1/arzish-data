@@ -1,0 +1,83 @@
+{
+ "v": 1,
+ "builtAt": "2026-10-21T00:00:00Z",
+ "market": {
+  "asOf": "2026-10-21",
+  "fx": {
+   "PKR": 1,
+   "USD": 277.0,
+   "AED": 75.43,
+   "SAR": 73.87,
+   "EUR": 310.93,
+   "GBP": 363.0
+  },
+  "fxDate": "2026-10-09",
+  "goldTola": 440636,
+  "silverTola": 6256,
+  "goldUsdOz": 4181,
+  "goldDate": "2026-10-17",
+  "policyRate": 11.5,
+  "policyDate": "2026-09-14",
+  "cpi": 10.26,
+  "cpiMonth": "Sep 2026",
+  "coreCpi": 8.6,
+  "tbill": {
+   "m1": 11.5,
+   "m3": 12.0,
+   "m6": 12.4,
+   "m12": 12.5,
+   "date": "2026-10-14"
+  },
+  "nss": {
+   "BSC": 12.72,
+   "PBA": 12.72,
+   "SSC": 11.82,
+   "DSC": 11.8,
+   "RIC": 11.76,
+   "STSC": 11.31,
+   "SITA3": 11.57,
+   "SITA5": 11.7,
+   "SISA": 11.33,
+   "SHUHADA": 12.72,
+   "PRIZE": 0
+  },
+  "nssDate": "2026-10-01",
+  "npcUsd": 7.25,
+  "btcUsd": 82264,
+  "btcDate": "2026-10-19",
+  "fedFunds": 4.0,
+  "ust10y": 5.28
+ },
+ "dates": {
+  "fx": "2026-10-09",
+  "goldTola": "2026-10-17",
+  "silverTola": "2026-10-17",
+  "goldUsdOz": "2026-10-17",
+  "policyRate": "2026-09-14",
+  "cpi": "2026-09",
+  "coreCpi": "2026-09",
+  "tbill": "2026-10-14",
+  "npcUsd": "2026-10-19",
+  "btcUsd": "2026-10-19",
+  "fedFunds": "2026-10-01",
+  "ust10y": "2026-10-01",
+  "nss.BSC": "2026-10-01",
+  "nss.PBA": "2026-10-01",
+  "nss.SSC": "2026-10-01",
+  "nss.DSC": "2026-10-01",
+  "nss.RIC": "2026-10-01",
+  "nss.STSC": "2026-10-01",
+  "nss.SITA3": "2026-10-01",
+  "nss.SITA5": "2026-10-01",
+  "nss.SISA": "2026-10-01",
+  "nss.SHUHADA": "2026-10-01",
+  "nss.PRIZE": "2026-10-01"
+ },
+ "sources": {
+  "seed": "Arzish built-in snapshot of 21 Oct 2026"
+ },
+ "sourceInfo": {},
+ "extra": {},
+ "status": {},
+ "review": []
+}
