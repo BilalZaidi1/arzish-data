@@ -1,6 +1,6 @@
 {
  "v": 1,
- "builtAt": "2026-10-22T08:03:44Z",
+ "builtAt": "2026-10-22T09:04:21Z",
  "market": {
   "asOf": "2026-10-22",
   "fx": {
@@ -46,7 +46,11 @@
   "btcUsd": 82688,
   "btcDate": "2026-10-21",
   "fedFunds": 3.88,
-  "ust10y": 5.13
+  "ust10y": 5.13,
+  "kse100": 163942.22,
+  "kse100Date": "2026-10-22",
+  "kse100Ytd": -5.8,
+  "kse100Ath": 189167
  },
  "dates": {
   "fx": "2026-10-21",
@@ -71,7 +75,10 @@
   "nss.SITA5": "2026-10-01",
   "nss.SISA": "2026-10-21",
   "nss.SHUHADA": "2026-10-21",
-  "nss.PRIZE": "2026-10-01"
+  "nss.PRIZE": "2026-10-01",
+  "kse100": "2026-10-22",
+  "kse100Ytd": "2026-10-22",
+  "kse100Ath": "2026-10-22"
  },
  "sources": {
   "seed": "Arzish built-in snapshot of 21 Oct 2026",
@@ -83,7 +90,10 @@
   "nss": "cdns",
   "cpi": "pbs",
   "ust10y": "treasury",
-  "fedFunds": "nyfed"
+  "fedFunds": "nyfed",
+  "kse100": "psx",
+  "kse100Ytd": "psx",
+  "kse100Ath": "psx"
  },
  "sourceInfo": {
   "sbp": {
@@ -93,6 +103,14 @@
   "sbp_open": {
    "label": "SBP: open-market closing rates",
    "url": "https://www.sbp.org.pk/"
+  },
+  "psx": {
+   "label": "PSX Data Portal (read with psxdata)",
+   "url": "https://dps.psx.com.pk/"
+  },
+  "funds": {
+   "label": "MUFAP NAVs via the open pakistan-mutual-funds-data set",
+   "url": "https://github.com/saadsalmankhan/pakistan-mutual-funds-data"
   },
   "mufap": {
    "label": "MUFAP",
@@ -342,46 +360,107 @@
    },
    "asOf": "2026-10-21",
    "url": "https://www.sbp.org.pk/assets/document/Open_Market_Closing_Exchange_Rates_21-October-2026.pdf"
+  },
+  "psx": {
+   "asOf": "2026-10-22",
+   "time": "13:59",
+   "state": "Open",
+   "intraday": true,
+   "breadth": {
+    "advance": 130,
+    "decline": 340,
+    "unchanged": 15
+   },
+   "indices": {
+    "KSE100": {
+     "v": 163942.22,
+     "high": 166180.32,
+     "low": 163913.44,
+     "chg": -1988.76,
+     "chgPct": -1.2
+    },
+    "ALLSHR": {
+     "v": 99625.83,
+     "high": 100809.73,
+     "low": 99553.1,
+     "chg": -984.65,
+     "chgPct": -0.98
+    },
+    "KSE30": {
+     "v": 48292.71,
+     "high": 49023.81,
+     "low": 48286.62,
+     "chg": -771.17,
+     "chgPct": -1.57
+    },
+    "KMI30": {
+     "v": 235350.16,
+     "high": 238944.26,
+     "low": 235342.24,
+     "chg": -3534.39,
+     "chgPct": -1.48
+    },
+    "KMIALLSHR": {
+     "v": 64666.69,
+     "high": 65397.86,
+     "low": 64614.68,
+     "chg": -603.69,
+     "chgPct": -0.92
+    }
+   },
+   "kse": {
+    "ytdBase": {
+     "date": "2025-12-31",
+     "v": 174054.32
+    },
+    "ath": {
+     "date": "2026-01-23",
+     "v": 189166.83
+    }
+   },
+   "count": 756
   }
  },
  "status": {
   "sbp": {
    "ok": true,
-   "at": "2026-10-22T08:02:53Z"
+   "at": "2026-10-22T09:03:04Z"
   },
   "sbp_open": {
    "ok": true,
-   "at": "2026-10-22T08:03:10Z"
+   "at": "2026-10-22T09:03:21Z"
   },
-  "mufap": {
-   "ok": false,
-   "at": "2026-10-22T08:03:10Z",
-   "error": "disabled: MUFAP blocks automated access (Cloudflare challenge)",
-   "disabled": true
+  "psx": {
+   "ok": true,
+   "at": "2026-10-22T09:03:46Z"
+  },
+  "funds": {
+   "ok": true,
+   "at": "2026-10-22T09:03:49Z"
   },
   "cdns": {
    "ok": true,
-   "at": "2026-10-22T08:03:18Z"
+   "at": "2026-10-22T09:03:58Z"
   },
   "fx": {
    "ok": true,
-   "at": "2026-10-22T08:03:18Z"
+   "at": "2026-10-22T09:03:58Z"
   },
   "pbs": {
    "ok": true,
-   "at": "2026-10-22T08:03:24Z"
+   "at": "2026-10-22T09:04:01Z"
   },
   "treasury": {
    "ok": true,
-   "at": "2026-10-22T08:03:43Z"
+   "at": "2026-10-22T09:04:21Z"
   },
   "nyfed": {
    "ok": true,
-   "at": "2026-10-22T08:03:44Z"
+   "at": "2026-10-22T09:04:21Z"
   },
   "bls": {
    "ok": true,
-   "at": "2026-10-22T08:03:44Z"
+   "at": "2026-10-22T09:04:21Z"
   }
  },
  "review": [

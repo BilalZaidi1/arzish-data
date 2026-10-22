@@ -1,43 +1,45 @@
 {
- "builtAt": "2026-10-22T08:03:44Z",
+ "builtAt": "2026-10-22T09:04:21Z",
  "sources": {
   "sbp": {
    "ok": true,
-   "at": "2026-10-22T08:02:53Z"
+   "at": "2026-10-22T09:03:04Z"
   },
   "sbp_open": {
    "ok": true,
-   "at": "2026-10-22T08:03:10Z"
+   "at": "2026-10-22T09:03:21Z"
   },
-  "mufap": {
-   "ok": false,
-   "at": "2026-10-22T08:03:10Z",
-   "error": "disabled: MUFAP blocks automated access (Cloudflare challenge)",
-   "disabled": true
+  "psx": {
+   "ok": true,
+   "at": "2026-10-22T09:03:46Z"
+  },
+  "funds": {
+   "ok": true,
+   "at": "2026-10-22T09:03:49Z"
   },
   "cdns": {
    "ok": true,
-   "at": "2026-10-22T08:03:18Z"
+   "at": "2026-10-22T09:03:58Z"
   },
   "fx": {
    "ok": true,
-   "at": "2026-10-22T08:03:18Z"
+   "at": "2026-10-22T09:03:58Z"
   },
   "pbs": {
    "ok": true,
-   "at": "2026-10-22T08:03:24Z"
+   "at": "2026-10-22T09:04:01Z"
   },
   "treasury": {
    "ok": true,
-   "at": "2026-10-22T08:03:43Z"
+   "at": "2026-10-22T09:04:21Z"
   },
   "nyfed": {
    "ok": true,
-   "at": "2026-10-22T08:03:44Z"
+   "at": "2026-10-22T09:04:21Z"
   },
   "bls": {
    "ok": true,
-   "at": "2026-10-22T08:03:44Z"
+   "at": "2026-10-22T09:04:21Z"
   }
  }
 }
