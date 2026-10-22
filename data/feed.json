@@ -1,6 +1,6 @@
 {
  "v": 1,
- "builtAt": "2026-10-22T07:59:46Z",
+ "builtAt": "2026-10-22T08:01:47Z",
  "market": {
   "asOf": "2026-10-22",
   "fx": {
@@ -312,47 +312,76 @@
    "y5": 12.49,
    "y10": 12.5,
    "asOf": "2026-09-18"
+  },
+  "openMarket": {
+   "rates": {
+    "USD": {
+     "buy": 277.52,
+     "sell": 278.63
+    },
+    "EUR": {
+     "buy": 310.89,
+     "sell": 313.89
+    },
+    "GBP": {
+     "buy": 369.52,
+     "sell": 372.65
+    },
+    "AED": {
+     "buy": 75.6,
+     "sell": 76.2
+    },
+    "SAR": {
+     "buy": 73.92,
+     "sell": 74.49
+    },
+    "JPY": {
+     "buy": 1.74,
+     "sell": 1.8
+    }
+   },
+   "asOf": "2026-10-20",
+   "url": "https://www.sbp.org.pk/assets/document/open-market-closing-exchange-rates-20-October-2026.pdf"
   }
  },
  "status": {
   "sbp": {
    "ok": true,
-   "at": "2026-10-22T07:57:09Z"
+   "at": "2026-10-22T08:01:01Z"
   },
   "sbp_open": {
-   "ok": false,
-   "at": "2026-10-22T07:59:16Z",
-   "error": "RuntimeError: open-market PDF not found (tried 40 URLs; 0 links on SBP's list)"
+   "ok": true,
+   "at": "2026-10-22T08:01:13Z"
   },
   "mufap": {
    "ok": false,
-   "at": "2026-10-22T07:59:16Z",
+   "at": "2026-10-22T08:01:13Z",
    "error": "disabled: MUFAP blocks automated access (Cloudflare challenge)",
    "disabled": true
   },
   "cdns": {
    "ok": true,
-   "at": "2026-10-22T07:59:25Z"
+   "at": "2026-10-22T08:01:25Z"
   },
   "fx": {
    "ok": true,
-   "at": "2026-10-22T07:59:25Z"
+   "at": "2026-10-22T08:01:25Z"
   },
   "pbs": {
    "ok": true,
-   "at": "2026-10-22T07:59:28Z"
+   "at": "2026-10-22T08:01:28Z"
   },
   "treasury": {
    "ok": true,
-   "at": "2026-10-22T07:59:45Z"
+   "at": "2026-10-22T08:01:46Z"
   },
   "nyfed": {
    "ok": true,
-   "at": "2026-10-22T07:59:46Z"
+   "at": "2026-10-22T08:01:46Z"
   },
   "bls": {
    "ok": true,
-   "at": "2026-10-22T07:59:46Z"
+   "at": "2026-10-22T08:01:47Z"
   }
  },
  "review": [
