@@ -1,6 +1,6 @@
 {
  "v": 1,
- "builtAt": "2026-10-22T07:50:22Z",
+ "builtAt": "2026-10-22T07:55:20Z",
  "market": {
   "asOf": "2026-10-22",
   "fx": {
@@ -11,14 +11,14 @@
    "EUR": 310.8603,
    "GBP": 370.3238
   },
-  "fxDate": "2026-10-14",
+  "fxDate": "2026-10-21",
   "goldTola": 440636,
   "silverTola": 6256,
   "goldUsdOz": 4120.33,
   "goldDate": "2026-10-17",
   "policyRate": 11.5,
   "policyDate": "2026-09-14",
-  "cpi": 10.47,
+  "cpi": 10.26,
   "cpiMonth": "Sep 2026",
   "coreCpi": 8.6,
   "tbill": {
@@ -49,7 +49,7 @@
   "ust10y": 5.13
  },
  "dates": {
-  "fx": "2026-10-14",
+  "fx": "2026-10-21",
   "goldTola": "2026-10-17",
   "silverTola": "2026-10-17",
   "goldUsdOz": "2026-10-21",
@@ -137,11 +137,13 @@
     "bid": 12.27,
     "offer": 12.77
    },
-   "asOf": null
+   "asOf": "2026-10-21"
   },
   "reserves": {
+   "sbp": 21469.5,
+   "banks": 5393.8,
    "total": 26863.3,
-   "asOf": null
+   "asOf": "2026-10-09"
   },
   "overnightRepo": {
    "v": 11.17,
@@ -149,12 +151,12 @@
   },
   "usdM2M": {
    "v": 276.8611,
-   "asOf": "2026-10-14"
+   "asOf": "2026-10-21"
   },
   "usdWA": {
    "bid": 276.5504,
    "offer": 277.0072,
-   "asOf": "2026-10-14"
+   "asOf": "2026-10-21"
   },
   "ceiling": 12.5,
   "floor": 10.5,
@@ -303,50 +305,56 @@
   "usCpi": {
    "yoy": 3.74,
    "month": "2026-09"
+  },
+  "pib": {
+   "y2": 12.399,
+   "y3": 12.49,
+   "y5": 12.49,
+   "y10": 12.5,
+   "asOf": "2026-09-18"
   }
  },
  "status": {
   "sbp": {
    "ok": true,
-   "at": "2026-10-22T07:49:33Z"
+   "at": "2026-10-22T07:53:29Z"
   },
   "sbp_open": {
    "ok": false,
-   "at": "2026-10-22T07:49:44Z",
-   "error": "PDFSyntaxError: No /Root object! - Is this really a PDF?"
+   "at": "2026-10-22T07:54:47Z",
+   "error": "RuntimeError: open-market PDF not found (tried 27 URLs)"
   },
   "mufap": {
    "ok": false,
-   "at": "2026-10-22T07:49:54Z",
-   "error": "RuntimeError: https://www.mufap.com.pk/Industry/IndustryStatDaily?tab=3: 403 Client Error: Forbidden for url: https://www.mufap.com.pk/Industry/IndustryStatDaily?tab=3"
+   "at": "2026-10-22T07:54:48Z",
+   "error": "RuntimeError: https://www.mufap.com.pk: HTTP 403; https://mufap.com.pk: HTTP 403; https://beta.mufap.com.pk: HTTP 403"
   },
   "cdns": {
    "ok": true,
-   "at": "2026-10-22T07:50:03Z"
+   "at": "2026-10-22T07:54:57Z"
   },
   "fx": {
    "ok": true,
-   "at": "2026-10-22T07:50:03Z"
+   "at": "2026-10-22T07:54:57Z"
   },
   "pbs": {
    "ok": true,
-   "at": "2026-10-22T07:50:05Z"
+   "at": "2026-10-22T07:55:00Z"
   },
   "treasury": {
    "ok": true,
-   "at": "2026-10-22T07:50:21Z"
+   "at": "2026-10-22T07:55:19Z"
   },
   "nyfed": {
    "ok": true,
-   "at": "2026-10-22T07:50:22Z"
+   "at": "2026-10-22T07:55:19Z"
   },
   "bls": {
    "ok": true,
-   "at": "2026-10-22T07:50:22Z"
+   "at": "2026-10-22T07:55:20Z"
   }
  },
  "review": [
-  "goldTola/silverTola: set from the Sarafa association rate reported today; else spot-based from extra.metals",
-  "nss: CDNS rates changed (effective 2026-10-21); read SSC, DSC, STSC, SITA3, SITA5 from raw/cdns/files"
+  "goldTola/silverTola: set from the Sarafa association rate reported today; else spot-based from extra.metals"
  ]
 }
