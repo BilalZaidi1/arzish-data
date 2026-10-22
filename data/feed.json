@@ -1,6 +1,6 @@
 {
  "v": 1,
- "builtAt": "2026-10-22T08:01:47Z",
+ "builtAt": "2026-10-22T08:03:44Z",
  "market": {
   "asOf": "2026-10-22",
   "fx": {
@@ -317,19 +317,19 @@
    "rates": {
     "USD": {
      "buy": 277.52,
-     "sell": 278.63
+     "sell": 278.61
     },
     "EUR": {
-     "buy": 310.89,
-     "sell": 313.89
+     "buy": 310.9,
+     "sell": 313.79
     },
     "GBP": {
-     "buy": 369.52,
-     "sell": 372.65
+     "buy": 370.63,
+     "sell": 373.9
     },
     "AED": {
-     "buy": 75.6,
-     "sell": 76.2
+     "buy": 75.58,
+     "sell": 76.18
     },
     "SAR": {
      "buy": 73.92,
@@ -340,48 +340,48 @@
      "sell": 1.8
     }
    },
-   "asOf": "2026-10-20",
-   "url": "https://www.sbp.org.pk/assets/document/open-market-closing-exchange-rates-20-October-2026.pdf"
+   "asOf": "2026-10-21",
+   "url": "https://www.sbp.org.pk/assets/document/Open_Market_Closing_Exchange_Rates_21-October-2026.pdf"
   }
  },
  "status": {
   "sbp": {
    "ok": true,
-   "at": "2026-10-22T08:01:01Z"
+   "at": "2026-10-22T08:02:53Z"
   },
   "sbp_open": {
    "ok": true,
-   "at": "2026-10-22T08:01:13Z"
+   "at": "2026-10-22T08:03:10Z"
   },
   "mufap": {
    "ok": false,
-   "at": "2026-10-22T08:01:13Z",
+   "at": "2026-10-22T08:03:10Z",
    "error": "disabled: MUFAP blocks automated access (Cloudflare challenge)",
    "disabled": true
   },
   "cdns": {
    "ok": true,
-   "at": "2026-10-22T08:01:25Z"
+   "at": "2026-10-22T08:03:18Z"
   },
   "fx": {
    "ok": true,
-   "at": "2026-10-22T08:01:25Z"
+   "at": "2026-10-22T08:03:18Z"
   },
   "pbs": {
    "ok": true,
-   "at": "2026-10-22T08:01:28Z"
+   "at": "2026-10-22T08:03:24Z"
   },
   "treasury": {
    "ok": true,
-   "at": "2026-10-22T08:01:46Z"
+   "at": "2026-10-22T08:03:43Z"
   },
   "nyfed": {
    "ok": true,
-   "at": "2026-10-22T08:01:46Z"
+   "at": "2026-10-22T08:03:44Z"
   },
   "bls": {
    "ok": true,
-   "at": "2026-10-22T08:01:47Z"
+   "at": "2026-10-22T08:03:44Z"
   }
  },
  "review": [
