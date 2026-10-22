@@ -7,6 +7,9 @@ on:
     # PSX's previous closing prices. The second run is a retry slot.
     - cron: "40 1 * * *"
     - cron: "40 2 * * *"
+    # 16:50 Pakistan time on trading days, after PSX closes (16:30 on Fridays): the day's closing
+    # prices are in the repo by evening, so a late or failed morning run still leaves the agent closes.
+    - cron: "50 11 * * 1-5"
   workflow_dispatch:
   push:
     branches: [main]
