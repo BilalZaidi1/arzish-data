@@ -3,8 +3,8 @@
 Requests go through psxdata (MIT, https://github.com/psxdata/psxdata), which handles the portal's
 request token, retries and a 2-requests-per-second limit. A run makes about fifteen requests:
 
-  /screener       last price, day and 1-year change, P/E, dividend yield and index membership
-                  for every listed share (ETFs are not in it)
+  /screener       last price, day and 1-year change, P/E, dividend yield, market value and index
+                  membership for every listed share (ETFs are not in it)
   /symbols        company names, sectors and which symbols are ETFs
   /trading-panel  session date, index levels (KSE-100, KMI-30, ...) and market breadth
   /historical     daily closes for each ETF, and for the KSE-100 if PSX serves it
@@ -296,14 +296,17 @@ def _records(df) -> list[dict]:
 def latest(prev_extra: dict | None = None) -> dict:
     """Fetch everything (network). Returns {"session", "quotes", "kse", "notes"}."""
     import psxdata
+    from psxdata.parsers.html import parse_html_table
     from psxdata.scrapers.base import BaseScraper
 
     notes: list[str] = []
-    panel_html = BaseScraper()._get("trading_panel").text
+    portal = BaseScraper()
+    panel_html = portal._get("trading_panel").text
     save_raw("psx/trading_panel.html", panel_html)
     session = parse_trading_panel(panel_html)
 
-    screener = _records(psxdata.screener(cache=False))
+    # The screener is read as raw cells: psxdata.screener() turns '15.4B' market values into blanks.
+    screener = parse_html_table(portal._get("screener").text)
     symbols = _records(psxdata.symbols(cache=False))
     if len(screener) < 300:
         raise RuntimeError(f"screener returned {len(screener)} rows")
