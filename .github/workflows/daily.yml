@@ -2,9 +2,11 @@ name: Daily market data
 
 on:
   schedule:
-    # 22:40 and 23:40 Pakistan time (UTC+5): after SBP's evening rates and MUFAP's NAV report (~22:15).
-    - cron: "40 17 * * *"
-    - cron: "40 18 * * *"
+    # 06:40 and 07:40 Pakistan time (UTC+5), before the daily Claude agent (about 08:40): picks up
+    # the previous evening's SBP rates, the fund dataset's overnight NAV update (~03:30) and
+    # PSX's previous closing prices. The second run is a retry slot.
+    - cron: "40 1 * * *"
+    - cron: "40 2 * * *"
   workflow_dispatch:
   push:
     branches: [main]
@@ -24,7 +26,7 @@ concurrency:
 jobs:
   scrape:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5

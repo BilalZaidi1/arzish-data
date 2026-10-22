@@ -104,9 +104,12 @@ def merge(current: dict, feed: dict, patch: dict, today: str | None = None) -> d
         market["policyDate"] = today  # provisional until the agent confirms the decision date
     elif cm.get("policyDate") or fm.get("policyDate"):
         market["policyDate"] = cm.get("policyDate") or fm.get("policyDate")
-    for k in ("kse100Date", "sp500Date"):
-        if cm.get(k):
-            market[k] = cm[k]
+    if dates.get("kse100"):
+        market["kse100Date"] = dates["kse100"]
+    elif cm.get("kse100Date"):
+        market["kse100Date"] = cm["kse100Date"]
+    if cm.get("sp500Date"):
+        market["sp500Date"] = cm["sp500Date"]
 
     # Extra blocks: the feed's fresh copy wins; keep anything only the current document has.
     extra = dict(current.get("extra") or {})

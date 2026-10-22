@@ -3,7 +3,7 @@ from pathlib import Path
 
 import pytest
 
-from scrapers import cdns, fx, mufap, pbs, sbp, us
+from scrapers import cdns, funds, fx, mufap, pbs, psx, sbp, us
 from scrapers.common import num, parse_date
 from tools import check, merge
 
@@ -198,3 +198,149 @@ def test_check_flags():
     assert any("fx.USD" in ln for ln in lines) and any("nss.RIC" in ln for ln in lines)
     good = {"market": {"fx": {"USD": 277}, "goldTola": 440000, "goldUsdOz": 4120, "nss": {"RIC": 12.12}}}
     assert not [ln for ln in check.check(good, {}, {}) if ln.startswith("FAIL")]
+
+
+# ---------------------------------------------------------------- PSX
+
+
+def test_psx_trading_panel_real_page():
+    """PSX Data Portal trading panel, 8 Apr 2026 (trimmed copy of psxdata's fixture)."""
+    t = psx.parse_trading_panel((FIX / "psx_trading_panel.html").read_text(encoding="utf-8"))
+    assert t["date"] == "2026-04-08"
+    assert t["time"] == "15:05"
+    assert t["state"] == "Open"
+    assert t["breadth"] == {"advance": 466, "decline": 19, "unchanged": 5}
+    k = t["indices"]["KSE100"]
+    assert k["v"] == 165598.92 and k["chg"] == 13925.47 and k["chgPct"] == 9.18
+    assert k["high"] == 165710.58 and k["low"] == 162956.76
+    assert t["indices"]["KMI30"]["v"] == 242362.63
+    assert set(t["indices"]) >= {"KSE100", "KMI30", "ALLSHR", "KSE30", "KMIALLSHR"}
+
+
+def test_psx_falling_index_is_negative():
+    html = (
+        "<table><tr><th>Name</th><th>Current Index</th><th>High</th><th>Low</th><th>Change</th></tr>"
+        '<tr><td>KSE100</td><td>160000.5</td><td>161000</td><td>159000</td>'
+        '<td class="change__text--neg"><i class="icon-down-dir"></i> 1,204.10 (0.75%)</td></tr></table>'
+    )
+    k = psx.parse_trading_panel(html)["indices"]["KSE100"]
+    assert k["chg"] == -1204.1 and k["chgPct"] == -0.75
+
+
+def test_psx_quotes():
+    screener = [
+        {"symbol": "AABS", "listed_in": "ALLSHR,KMIALLSHR", "market_cap": "15.4B", "price": "884.50", "change_pct": "0.86%",
+         "change_1y_pct": "21.16%", "pe_ratio": "11.80", "dividend_yield": "4.80"},
+        {"symbol": "ATILXD", "listed_in": "ALLSHR", "market_cap": "8.1B", "price": 67.9, "change_pct": -2.5, "pe_ratio": 0, "dividend_yield": 0},
+        {"symbol": "HASCOLNC", "listed_in": "", "market_cap": "892.2M", "price": "7.10", "change_pct": "1.00%"},
+        {"symbol": "MEBL", "listed_in": "ALLSHR,KSE100,KMIALLSHR,KMI30", "market_cap": "910B", "price": "420.00", "change_pct": "0%"},
+        {"symbol": "ZZZ", "price": ""},
+        {"symbol": "AKBLTFC6", "price": "100"},
+    ]
+    symbols = [
+        {"symbol": "AABS", "name": "Al-Abbas Sugar Mills Limited", "sector_name": "SUGAR & ALLIED INDUSTRIES"},
+        {"symbol": "ATIL", "name": "Atlas Insurance Limited", "sector_name": "INSURANCE"},
+        {"symbol": "HASCOL", "name": "Hascol Petroleum Limited", "sector_name": "OIL & GAS MARKETING COMPANIES"},
+        {"symbol": "MEBL", "name": "Meezan Bank Limited", "sector_name": "COMMERCIAL BANKS"},
+        {"symbol": "AKBLTFC6", "name": "Askari Bank(TFC6)", "sector_name": "BILLS AND BONDS", "is_debt": True},
+        {"symbol": "MZNPETF", "name": "Meezan Pakistan ETF", "sector_name": "EXCHANGE TRADED FUNDS", "is_etf": True},
+    ]
+    q = {r["s"]: r for r in psx.build_quotes(screener, symbols, {"MZNPETF": {"p": 20.52, "c": 1.2, "d": "2026-10-21"}})}
+    assert set(q) == {"AABS", "ATIL", "HASCOL", "MEBL", "MZNPETF"}
+    a = q["AABS"]
+    assert a == {"s": "AABS", "n": "Al-Abbas Sugar Mills Limited", "sec": "Sugar & Allied Industries", "p": 884.5, "c": 0.86,
+                 "y1": 21.16, "pe": 11.8, "dy": 4.8, "mcB": 15.4, "sh": 1}
+    assert q["ATIL"]["x"] == "XD" and q["ATIL"]["p"] == 67.9 and "pe" not in q["ATIL"] and "sh" not in q["ATIL"]
+    assert q["HASCOL"]["x"] == "NC" and q["HASCOL"]["sec"] == "Oil & Gas Marketing Companies"
+    assert q["MEBL"]["k100"] == 1 and q["MEBL"]["sh"] == 1 and q["MEBL"]["mcB"] == 910
+    assert q["MZNPETF"] == {"s": "MZNPETF", "n": "Meezan Pakistan ETF", "sec": "Exchange Traded Funds", "p": 20.52, "etf": 1, "c": 1.2, "d": "2026-10-21"}
+
+
+def test_psx_last_close_and_kse_stats():
+    import datetime as dt
+    rows = [{"date": dt.datetime(2026, 10, 20), "close": 100.0}, {"date": dt.datetime(2026, 10, 21), "close": 102.0}]
+    assert psx.last_close(rows) == {"p": 102.0, "d": "2026-10-21", "c": 2.0}
+    hist = [{"date": "2025-12-30", "close": 173000.0}, {"date": "2025-12-31", "close": 174054.32},
+            {"date": "2026-01-23", "close": 189166.82}, {"date": "2026-09-23", "close": 172232.51}]
+    k = psx.kse_stats(hist, 168000.0, "2026-10-21")
+    assert k["level"] == 168000.0 and k["date"] == "2026-10-21"
+    assert k["ytdBase"] == {"date": "2025-12-31", "v": 174054.32}
+    assert k["ytd"] == round((168000 / 174054.32 - 1) * 100, 1)
+    assert k["ath"] == {"date": "2026-01-23", "v": 189166.82}
+    # Without history the stored year-start level and record carry over.
+    k2 = psx.kse_stats([], 190000.0, "2026-10-22", {"ytdBase": {"date": "2025-12-31", "v": 174054.32}, "ath": {"date": "2026-01-23", "v": 189166.82}})
+    assert k2["ath"] == {"date": "2026-10-22", "v": 190000.0} and k2["ytd"] == round((190000 / 174054.32 - 1) * 100, 1)
+
+
+def test_psx_session_date():
+    import datetime as dt
+    pkt = dt.timezone(dt.timedelta(hours=5))
+    morning = dt.datetime(2026, 10, 22, 6, 40, tzinfo=pkt)
+    # Panel still shows the last session.
+    assert psx.session_date({"date": "2026-10-21", "state": "Closed"}, "2026-10-21", morning) == "2026-10-21"
+    # Panel already rolled over to today before the open: prices are the last close.
+    assert psx.session_date({"date": "2026-10-22", "state": "Pre-Open"}, "2026-10-21", morning) == "2026-10-21"
+    # During the session the panel date is right.
+    midday = dt.datetime(2026, 10, 22, 11, 0, tzinfo=pkt)
+    assert psx.session_date({"date": "2026-10-22", "state": "Open"}, "2026-10-21", midday) == "2026-10-22"
+    assert psx.session_date({}, "2026-10-21", midday) == "2026-10-21"
+
+
+def test_nice_case_and_scaled():
+    assert psx.nice_case("INV. BANKS / INV. COS. / SECURITIES COS.") == "Inv. Banks / Inv. Cos. / Securities Cos."
+    assert psx.nice_case("EXCHANGE TRADED FUNDS") == "Exchange Traded Funds"
+    assert psx.scaled("499.1K") == 499100 and psx.scaled("1,234") == 1234 and psx.scaled("n/a") is None
+
+
+# ---------------------------------------------------------------- Fund NAVs (open dataset)
+
+
+def _fund_dataset(root: Path, n: int = 160) -> None:
+    items, perf = [], []
+    (root / "history").mkdir(parents=True)
+    for i in range(n):
+        fid = str(12000 + i)
+        items.append({"fundId": fid, "name": f"Test Fund {i:03d}", "amc": "Test AMC", "nav": 10.61, "offerPrice": 10.7,
+                      "category": "VPS-Money Market" if i == 1 else "Money Market", "shariah": i == 2, "expenseRatio": 1.15})
+        (root / "history" / f"{fid}.ndjson").write_text(
+            '{"date":"2026-10-20","nav":10.6011,"offerPrice":10.6933}\n{"date":"2026-10-21","nav":10.6056,"offerPrice":10.6979}\n',
+            encoding="utf-8")
+        perf.append({"fundId": fid, "asOf": "2026-10-21", "stale": i == 3,
+                     "returns": {"1y": {"pct": 10.69, "anomalies": 1 if i == 4 else 0}}})
+    (root / "funds.json").write_text(json.dumps({"funds": items, "updatedAt": "2026-10-21T22:09:14Z"}), encoding="utf-8")
+    (root / "performance.json").write_text(json.dumps({"funds": perf}), encoding="utf-8")
+
+
+def test_funds_from_dataset(tmp_path):
+    _fund_dataset(tmp_path)
+    d = funds.build(tmp_path, {"sha": "abc"})
+    assert d["asOf"] == "2026-10-21" and d["reportDate"] == "2026-10-21" and len(d["funds"]) == 160
+    f = {r["id"]: r for r in d["funds"]}
+    assert f["12000"] == {"id": "12000", "n": "Test Fund 000", "amc": "Test AMC", "cat": "Money Market",
+                          "sec": "Open-End Collective Investment Scheme", "nav": 10.6056, "d": "2026-10-21",
+                          "off": 10.6979, "ter": 1.15, "r1y": 10.69}
+    assert f["12001"]["sec"] == "Voluntary Pension Scheme"
+    assert f["12002"]["sh"] == 1 and f["12003"]["stale"] == 1 and "r1y" not in f["12004"]
+
+
+def test_funds_too_few_is_an_error(tmp_path):
+    _fund_dataset(tmp_path, n=20)
+    with pytest.raises(RuntimeError):
+        funds.build(tmp_path)
+
+
+def test_merge_kse100_date_follows_value():
+    cur = {"market": {"kse100": 160000.0, "kse100Date": "2026-10-09"}, "dates": {"kse100": "2026-10-09"}}
+    feed = {"market": {"kse100": 168000.5, "kse100Ytd": -3.5, "kse100Ath": 189167}, "dates": {"kse100": "2026-10-21", "kse100Ytd": "2026-10-21", "kse100Ath": "2026-10-21"}}
+    out = merge.merge(cur, feed, {}, "2026-10-22")
+    assert out["market"]["kse100"] == 168000.5 and out["market"]["kse100Date"] == "2026-10-21"
+    assert out["market"]["kse100Ytd"] == -3.5 and out["market"]["kse100Ath"] == 189167
+
+
+def test_check_psx_doc():
+    good = {"asOf": "2026-10-21", "stocks": [{"s": f"S{i}", "p": 10.0} for i in range(400)]}
+    assert not [x for x in check.check({"market": {}}, {}, {}, good) if x.startswith("FAIL")]
+    bad = {"stocks": [{"s": "A", "p": 0}]}
+    lines = check.check({"market": {"kse100": 5000}}, {}, {}, bad)
+    assert any("only 1 shares" in x for x in lines) and any("without a price" in x for x in lines)
+    assert any("no session date" in x for x in lines) and any("kse100=5000" in x for x in lines)

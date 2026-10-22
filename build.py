@@ -1,7 +1,8 @@
 """Run every scraper, then write the files the Arzish daily agent loads into the app:
 
   data/feed.json    market snapshot in Arzish's units, with per-field dates and sources
-  data/funds.json   MUFAP NAVs for every fund
+  data/funds.json   NAVs for every MUFAP fund (from the open pakistan-mutual-funds-data set)
+  data/psx.json     PSX closing prices for every listed share and ETF
   data/status.json  per-source health
   data/history/YYYY-MM-DD.json   compact daily copy (for day-over-day checks)
 
@@ -17,7 +18,7 @@ import sys
 import traceback
 from pathlib import Path
 
-from scrapers import cdns, fx, mufap, pbs, sbp, us
+from scrapers import cdns, funds, fx, mufap, pbs, psx, sbp, us
 from scrapers.common import now_pkt, utc_iso
 
 ROOT = Path(__file__).resolve().parent
@@ -26,6 +27,8 @@ DATA = ROOT / "data"
 SOURCE_INFO = {
     "sbp": sbp.SOURCE,
     "sbp_open": {"label": "SBP: open-market closing rates", "url": "https://www.sbp.org.pk/"},
+    "psx": psx.SOURCE,
+    "funds": funds.SOURCE,
     "mufap": mufap.SOURCE,
     "cdns": cdns.SOURCE,
     "fx": fx.SOURCE,
@@ -79,13 +82,14 @@ def build() -> dict:
 
     rates = run("sbp", sbp.rates, status)
     open_mkt = run("sbp_open", sbp.open_market, status)
-    # MUFAP serves a Cloudflare bot challenge to automated requests, so it is not scraped unless
-    # MUFAP grants access (then set MUFAP_ENABLED=1 in the workflow).
-    if os.environ.get("MUFAP_ENABLED") == "1":
-        funds = run("mufap", mufap.navs, status)
-    else:
-        funds = None
-        status["mufap"] = {"ok": False, "at": utc_iso(), "error": "disabled: MUFAP blocks automated access (Cloudflare challenge)", "disabled": True}
+    px = run("psx", lambda: psx.latest(prev.get("extra")), status)
+    # Fund NAVs come from the open dataset. MUFAP itself serves a Cloudflare bot challenge to
+    # automated requests, so it is scraped only if MUFAP grants access (MUFAP_ENABLED=1).
+    fund_list = run("funds", funds.navs, status)
+    fund_source = funds.SOURCE
+    if not fund_list and os.environ.get("MUFAP_ENABLED") == "1":
+        fund_list = run("mufap", mufap.navs, status)
+        fund_source = mufap.SOURCE
     nss = run("cdns", cdns.rates, status)
     fxd = run("fx", fx.latest, status)
     cpi = run("pbs", pbs.latest_cpi, status)
@@ -165,6 +169,39 @@ def build() -> dict:
     if open_mkt:
         extra["openMarket"] = open_mkt
 
+    # ---- PSX: KSE-100 level, year-to-date change and record close (closing prices go to psx.json)
+    psx_doc = None
+    if px:
+        ses, kse = px["session"], px["kse"]
+        day = ses.get("date")
+        if kse.get("level") and day:
+            put("kse100", round(kse["level"], 2), day, "psx")
+            market["kse100Date"] = day
+            if kse.get("ytd") is not None:
+                put("kse100Ytd", kse["ytd"], day, "psx")
+            if kse.get("ath"):
+                put("kse100Ath", round(kse["ath"]["v"]), day, "psx")
+        extra["psx"] = {
+            "asOf": day,
+            "time": ses.get("time"),
+            "state": ses.get("state"),
+            "intraday": ses.get("intraday", False),
+            "breadth": ses.get("breadth"),
+            "indices": {k: v for k, v in (ses.get("indices") or {}).items() if k in psx.INDEXES},
+            "kse": {k: kse.get(k) for k in ("ytdBase", "ath") if kse.get(k)},
+            "count": len(px["quotes"]),
+        }
+        psx_doc = {
+            "v": 1,
+            "builtAt": utc_iso(),
+            "asOf": day,
+            "time": ses.get("time"),
+            "intraday": ses.get("intraday", False),
+            "source": psx.SOURCE,
+            "count": len(px["quotes"]),
+            "stocks": px["quotes"],
+        }
+
     # ---- National Savings
     if nss:
         # Each scheme keeps its own date ("nss.RIC"), so a carried-forward rate is never mistaken for a new one.
@@ -219,17 +256,18 @@ def build() -> dict:
     }
 
     funds_doc = None
-    if funds:
+    if fund_list:
         funds_doc = {
             "v": 1,
             "builtAt": utc_iso(),
-            "asOf": funds["asOf"],
-            "reportDate": funds.get("reportDate"),
-            "source": mufap.SOURCE,
-            "count": len(funds["funds"]),
-            "funds": funds["funds"],
+            "asOf": fund_list["asOf"],
+            "reportDate": fund_list.get("reportDate"),
+            "source": fund_source,
+            "dataset": {k: fund_list[k] for k in ("datasetUpdatedAt", "commit") if fund_list.get(k)},
+            "count": len(fund_list["funds"]),
+            "funds": fund_list["funds"],
         }
-    return {"feed": feed, "funds": funds_doc, "status": status}
+    return {"feed": feed, "funds": funds_doc, "psx": psx_doc, "status": status}
 
 
 def main() -> int:
@@ -237,6 +275,8 @@ def main() -> int:
     write_json(DATA / "feed.json", out["feed"])
     if out["funds"]:
         write_json(DATA / "funds.json", out["funds"], compact=True)
+    if out["psx"]:
+        write_json(DATA / "psx.json", out["psx"], compact=True)
     write_json(DATA / "status.json", {"builtAt": out["feed"]["builtAt"], "sources": out["status"]})
     day = now_pkt().date().isoformat()
     write_json(DATA / "history" / f"{day}.json", {"market": out["feed"]["market"], "kibor": out["feed"]["extra"].get("kibor")}, compact=True)

@@ -1,6 +1,6 @@
 """Sanity checks before data reaches Arzish. Prints FAIL/WARN lines; exits 1 on any FAIL.
 
-    python tools/check.py --doc out.json [--previous current.json] [--funds data/funds.json]
+    python tools/check.py --doc out.json [--previous current.json] [--funds data/funds.json] [--psx data/psx.json]
 
 FAIL means the value must not be published (out of any plausible range).
 WARN means a large move worth confirming against the source before publishing.
@@ -21,8 +21,12 @@ RANGES = {
     "goldTola": (50_000, 3_000_000),
     "silverTola": (500, 100_000),
     "btcUsd": (1_000, 2_000_000),
+    "kse100": (10_000, 2_000_000),
+    "kse100Ath": (10_000, 2_000_000),
+    "kse100Ytd": (-80, 300),
 }
-MOVES = {"goldTola": 0.08, "silverTola": 0.12, "goldUsdOz": 0.08, "btcUsd": 0.25, "policyRate": 0.35, "ust10y": 0.25, "fedFunds": 0.35}
+MOVES = {"goldTola": 0.08, "silverTola": 0.12, "goldUsdOz": 0.08, "btcUsd": 0.25, "policyRate": 0.35, "ust10y": 0.25, "fedFunds": 0.35,
+         "kse100": 0.08}
 
 
 def load(p):
@@ -34,7 +38,7 @@ def load(p):
     return d
 
 
-def check(doc: dict, prev: dict, funds: dict) -> list[str]:
+def check(doc: dict, prev: dict, funds: dict, psx: dict | None = None) -> list[str]:
     out = []
     m, pm = doc.get("market") or {}, prev.get("market") or {}
     for k, (lo, hi) in RANGES.items():
@@ -78,6 +82,21 @@ def check(doc: dict, prev: dict, funds: dict) -> list[str]:
         size = len(json.dumps(funds, separators=(",", ":")))
         if size > 240_000:
             out.append(f"FAIL funds.json is {size} bytes (store limit 256 KiB)")
+    if psx:
+        stocks = psx.get("stocks") or []
+        if len(stocks) < 300:
+            out.append(f"FAIL only {len(stocks)} shares in psx.json")
+        bad = [s.get("s") for s in stocks if not s.get("p") or s["p"] <= 0]
+        if bad:
+            out.append(f"FAIL {len(bad)} PSX quotes without a price")
+        if not psx.get("asOf"):
+            out.append("FAIL psx.json has no session date")
+        size = len(json.dumps(psx, separators=(",", ":")))
+        if size > 240_000:
+            out.append(f"FAIL psx.json is {size} bytes (store limit 256 KiB)")
+    k, ath = m.get("kse100"), m.get("kse100Ath")
+    if k and ath and k > ath * 1.001:
+        out.append(f"WARN kse100 {k} is above the stored record {ath}")
     size = len(json.dumps(doc, separators=(",", ":")))
     if size > 240_000:
         out.append(f"FAIL market doc is {size} bytes")
@@ -89,8 +108,9 @@ def main() -> None:
     ap.add_argument("--doc", required=True)
     ap.add_argument("--previous")
     ap.add_argument("--funds")
+    ap.add_argument("--psx")
     a = ap.parse_args()
-    lines = check(load(a.doc), load(a.previous), load(a.funds))
+    lines = check(load(a.doc), load(a.previous), load(a.funds), load(a.psx))
     for ln in lines:
         print(ln)
     print("OK" if not any(ln.startswith("FAIL") for ln in lines) else "FAILED")
