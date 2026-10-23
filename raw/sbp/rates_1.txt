@@ -365,6 +365,9 @@ Press Release of Workers’ Remittances for September 2026
 October 07 2026
 SBP unveils Pakistan’s Financial Inclusion Index Results for CY25
 View all
+October 23, 2026
+BPRD Circular Letter No. 21 of 2026
+Treatment for Investments in Collective Investment Schemes/ Mutual Funds /Private Equity Funds for CAR Purpose
 October 16, 2026
 IFPD Circular No. 03 of 2026
 Adoption of ‘Accounting and Auditing Organization for Islamic Financial Institutions’ (AAOIFI) Shariah Standard
@@ -374,9 +377,6 @@ Banking on Equality Policy 2026 - Advancing Women’s Financial Inclusion
 October 13, 2026
 EPD Circular Letter No. 15 of 2026
 Revised Instructions - Export of 200,000 MT of Sugar
-October 9, 2026
-SH&SFD Circular No. 06 of 2026
-Amendments in Prudential Regulations for Housing Finance – Standardization and Simplification of Documentation Requirements (PR HF-7)
 View all
 August 27, 2026
 No. PSP&OD/DPS/443723/2026
@@ -436,22 +436,22 @@ Total Reserves
 Money Market Interest Rates
 Weighted - average overnight repo
 rate
-As on 21-Oct-26
-11.08%
+As on 22-Oct-26
+11.22%
 p.a.
-KIBOR As on 22- Oct - 26
+KIBOR As on 23- Oct - 26
 Tenor
 BID
 Offer
 3-M
-11.76
-12.01
+11.75
+12.00
 6-M
-12.18
-12.43
+12.16
+12.41
 12-M
-12.26
-12.76
+12.25
+12.75
 Upcoming Auction
 PIB Auction (Fixed Rate)
 07-Oct-26
@@ -463,14 +463,14 @@ Coupon)
 Floating Rate PIB (Quarterly Coupon)
 04-Feb-25
 USD/ PKR Rates
-As on 22- Oct - 2026
+As on 23- Oct - 2026
 M2M Revaluation Rate
-276.8522
+276.8236
 Weighted Average Rate
 BID
-276.545
+276.5052
 Offer
-277.0018
+276.9621
 Cut-off Rates in the Latest Auctions
 MTBs
 Tenor
