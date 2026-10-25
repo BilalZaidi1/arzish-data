@@ -1,6 +1,6 @@
 {
  "v": 1,
- "builtAt": "2026-10-25T06:49:11Z",
+ "builtAt": "2026-10-25T07:50:34Z",
  "market": {
   "asOf": "2026-10-25",
   "fx": {
@@ -424,43 +424,43 @@
  "status": {
   "sbp": {
    "ok": true,
-   "at": "2026-10-25T06:47:28Z"
+   "at": "2026-10-25T07:48:45Z"
   },
   "sbp_open": {
    "ok": true,
-   "at": "2026-10-25T06:47:59Z"
+   "at": "2026-10-25T07:49:15Z"
   },
   "psx": {
    "ok": true,
-   "at": "2026-10-25T06:48:28Z"
+   "at": "2026-10-25T07:49:48Z"
   },
   "funds": {
    "ok": true,
-   "at": "2026-10-25T06:48:30Z"
+   "at": "2026-10-25T07:49:50Z"
   },
   "cdns": {
    "ok": true,
-   "at": "2026-10-25T06:48:39Z"
+   "at": "2026-10-25T07:50:00Z"
   },
   "fx": {
    "ok": true,
-   "at": "2026-10-25T06:48:39Z"
+   "at": "2026-10-25T07:50:00Z"
   },
   "pbs": {
    "ok": true,
-   "at": "2026-10-25T06:48:42Z"
+   "at": "2026-10-25T07:50:04Z"
   },
   "treasury": {
    "ok": true,
-   "at": "2026-10-25T06:49:00Z"
+   "at": "2026-10-25T07:50:24Z"
   },
   "nyfed": {
    "ok": true,
-   "at": "2026-10-25T06:49:00Z"
+   "at": "2026-10-25T07:50:24Z"
   },
   "bls": {
    "ok": false,
-   "at": "2026-10-25T06:49:11Z",
+   "at": "2026-10-25T07:50:34Z",
    "error": "RuntimeError: https://api.bls.gov/publicAPI/v1/timeseries/data/CUUR0000SA0: 503 Server Error: Service Unavailable for url: https://api.bls.gov/publicAPI/v1/timeseries/data/CUUR0000SA0"
   }
  },
