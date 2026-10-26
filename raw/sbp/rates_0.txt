@@ -319,6 +319,11 @@ Pasban Remittance Reward Scheme
 Read More
 about
 Pasban Remittance Reward Scheme
+Monetary Policy
+MPC has decided to increase the policy rate by 50 bps to 12% w.e.f. October 27, 2026.
+Read More
+about
+MPC has decided to increase the policy rate by 50 bps to 12% w.e.f. October 27, 2026.
 Launch of
 InvestPak
 Read More
@@ -356,15 +361,18 @@ Circulars
 Notifications
 Data Calendar
 Publications
+October 26 2026
+Monetary Policy Statement - 26 October 2026
 October 17 2026
 Governor SBP updates foreign investors on Pakistan’s economic resilience and macroeconomic outlook
 October 13 2026
 SBP launches Banking on Equality Policy 2026 re-affirming its commitment to reduce the gender gap in financial inclusion
 October 09 2026
 Press Release of Workers’ Remittances for September 2026
-October 07 2026
-SBP unveils Pakistan’s Financial Inclusion Index Results for CY25
 View all
+October 26, 2026
+DMMD Circular No. 04 of 2026
+SBP’s Policy Rate and Overnight Repo / Reverse-Repo Facilities
 October 23, 2026
 BPRD Circular Letter No. 22 of 2026
 Amendment in Regulation R-6 of Prudential Regulations for Corporate/Commercial Banking
@@ -374,9 +382,6 @@ Treatment for Investments in Collective Investment Schemes/ Mutual Funds /Privat
 October 16, 2026
 IFPD Circular No. 03 of 2026
 Adoption of ‘Accounting and Auditing Organization for Islamic Financial Institutions’ (AAOIFI) Shariah Standard
-October 13, 2026
-ACFID Circular No. 02 of 2026
-Banking on Equality Policy 2026 - Advancing Women’s Financial Inclusion
 View all
 August 27, 2026
 No. PSP&OD/DPS/443723/2026
@@ -415,15 +420,15 @@ Economic Data
 A snapshot of Pakistan’s key financial and economic indicators
 SBP Policy Rate & Interest Rate Corridor Facilities
 SBP Policy Rate
-11.50%
+12.00%
 p.a.
 SBP Overnight Reverse (Repo)
 Ceiling Rate
-12.50%
+13.00%
 p.a.
 SBP Overnight Reverse
 (Floor) Rate
-10.50%
+11.00%
 p.a.
 Liquid Foreign Exchange Reserves (USD million)
 As on 16- October - 2026
@@ -436,22 +441,22 @@ Total Reserves
 Money Market Interest Rates
 Weighted - average overnight repo
 rate
-As on 22-Oct-26
-11.22%
+As on 23-Oct-26
+11.56%
 p.a.
-KIBOR As on 23- Oct - 26
+KIBOR As on 26- Oct - 26
 Tenor
 BID
 Offer
 3-M
-11.75
-12.00
+11.78
+12.03
 6-M
-12.16
-12.41
+12.2
+12.45
 12-M
-12.25
-12.75
+12.29
+12.79
 Upcoming Auction
 PIB Auction (Fixed Rate)
 07-Oct-26
@@ -463,14 +468,14 @@ Coupon)
 Floating Rate PIB (Quarterly Coupon)
 04-Feb-25
 USD/ PKR Rates
-As on 23- Oct - 2026
+As on 26- Oct - 2026
 M2M Revaluation Rate
-276.8236
+276.8118
 Weighted Average Rate
 BID
-276.5052
+276.5004
 Offer
-276.9621
+276.9572
 Cut-off Rates in the Latest Auctions
 MTBs
 Tenor
