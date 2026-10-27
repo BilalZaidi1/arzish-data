@@ -1,12 +1,12 @@
 Exchange Companies Association of Pakistan (ECAP)
-Open Market Closing Exchange Rates1 as on October 26, 2026
+Open Market Closing Exchange Rates1 as on October 27, 2026
 Currency Buying Selling
-USD 277.57 278.82
-EUR 310.51 313.42
-GBP 370.18 373.47
+USD 277.55 278.68
+EUR 309.22 312.27
+GBP 369.20 372.53
 JPY 1.75 1.80
-AED 75.60 76.17
-SAR 73.94 74.48
+AED 75.60 76.18
+SAR 73.95 74.47
 Notes:
 1-The above rates are provided by Exchange Companies Association of Pakistan (ECAP) and are being
 published for information only.

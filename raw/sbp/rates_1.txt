@@ -370,6 +370,9 @@ SBP launches Banking on Equality Policy 2026 re-affirming its commitment to redu
 October 09 2026
 Press Release of Workers’ Remittances for September 2026
 View all
+October 27, 2026
+BPRD Circular No. 02 of 2026
+Minimum Capital Requirements (MCR) for Banks and DFIs
 October 26, 2026
 DMMD Circular No. 04 of 2026
 SBP’s Policy Rate and Overnight Repo / Reverse-Repo Facilities
@@ -379,9 +382,6 @@ Amendment in Regulation R-6 of Prudential Regulations for Corporate/Commercial B
 October 23, 2026
 BPRD Circular Letter No. 21 of 2026
 Treatment for Investments in Collective Investment Schemes/ Mutual Funds /Private Equity Funds for CAR Purpose
-October 16, 2026
-IFPD Circular No. 03 of 2026
-Adoption of ‘Accounting and Auditing Organization for Islamic Financial Institutions’ (AAOIFI) Shariah Standard
 View all
 August 27, 2026
 No. PSP&OD/DPS/443723/2026
@@ -441,16 +441,16 @@ Total Reserves
 Money Market Interest Rates
 Weighted - average overnight repo
 rate
-As on 23-Oct-26
-11.56%
+As on 26-Oct-26
+11.59%
 p.a.
-KIBOR As on 26- Oct - 26
+KIBOR As on 27- Oct - 26
 Tenor
 BID
 Offer
 3-M
-11.78
-12.03
+11.96
+12.21
 6-M
 12.2
 12.45
@@ -468,14 +468,14 @@ Coupon)
 Floating Rate PIB (Quarterly Coupon)
 04-Feb-25
 USD/ PKR Rates
-As on 26- Oct - 2026
+As on 27- Oct - 2026
 M2M Revaluation Rate
-276.8118
+276.8022
 Weighted Average Rate
 BID
-276.5004
+276.495
 Offer
-276.9572
+276.9518
 Cut-off Rates in the Latest Auctions
 MTBs
 Tenor
