@@ -361,15 +361,18 @@ Circulars
 Notifications
 Data Calendar
 Publications
+October 28 2026
+Decisive, evidence-based policies key to lasting economic stability: Governor SBP
 October 26 2026
 Monetary Policy Statement - 26 October 2026
 October 17 2026
 Governor SBP updates foreign investors on Pakistan’s economic resilience and macroeconomic outlook
 October 13 2026
 SBP launches Banking on Equality Policy 2026 re-affirming its commitment to reduce the gender gap in financial inclusion
-October 09 2026
-Press Release of Workers’ Remittances for September 2026
 View all
+October 28, 2026
+BPRD Circular No. 03 of 2026
+Handbook for Licensing/ Authorization of Regulated Entities
 October 28, 2026
 SH&SFD Circular No. 07 of 2026
 Financing Framework for Small Enterprises and Small Farmers under Wholesale and Agency Arrangements
@@ -379,9 +382,6 @@ Revised Instructions - Export of 200,000 MT of Sugar
 October 27, 2026
 BPRD Circular No. 02 of 2026
 Minimum Capital Requirements (MCR) for Banks and DFIs
-October 26, 2026
-DMMD Circular No. 04 of 2026
-SBP’s Policy Rate and Overnight Repo / Reverse-Repo Facilities
 View all
 August 27, 2026
 No. PSP&OD/DPS/443723/2026
@@ -441,22 +441,22 @@ Total Reserves
 Money Market Interest Rates
 Weighted - average overnight repo
 rate
-As on 26-Oct-26
-11.59%
+As on 27-Oct-26
+11.76%
 p.a.
-KIBOR As on 27- Oct - 26
+KIBOR As on 28- Oct - 26
 Tenor
 BID
 Offer
 3-M
-11.96
-12.21
+11.98
+12.23
 6-M
-12.2
-12.45
+12.21
+12.46
 12-M
-12.29
-12.79
+12.31
+12.81
 Upcoming Auction
 PIB Auction (Fixed Rate)
 07-Oct-26
@@ -468,14 +468,14 @@ Coupon)
 Floating Rate PIB (Quarterly Coupon)
 04-Feb-25
 USD/ PKR Rates
-As on 27- Oct - 2026
+As on 28- Oct - 2026
 M2M Revaluation Rate
-276.8022
+276.7736
 Weighted Average Rate
 BID
-276.495
+276.4631
 Offer
-276.9518
+276.9199
 Cut-off Rates in the Latest Auctions
 MTBs
 Tenor
