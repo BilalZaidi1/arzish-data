@@ -371,14 +371,14 @@ October 13 2026
 SBP launches Banking on Equality Policy 2026 re-affirming its commitment to reduce the gender gap in financial inclusion
 View all
 October 28, 2026
-BPRD Circular No. 03 of 2026
-Handbook for Licensing/ Authorization of Regulated Entities
-October 28, 2026
 SH&SFD Circular No. 07 of 2026
 Financing Framework for Small Enterprises and Small Farmers under Wholesale and Agency Arrangements
 October 28, 2026
 EPD Circular Letter No. 16 of 2026
 Revised Instructions - Export of 200,000 MT of Sugar
+October 28, 2026
+BPRD Circular No. 03 of 2026
+Handbook for Licensing/ Authorization of Regulated Entities
 October 27, 2026
 BPRD Circular No. 02 of 2026
 Minimum Capital Requirements (MCR) for Banks and DFIs
@@ -461,7 +461,7 @@ Upcoming Auction
 PIB Auction (Fixed Rate)
 07-Oct-26
 MTB
-14-Oct-26
+11-Nov-26
 Floating Rate PIB (Semi-Annual
 Coupon)
 23-Jun-26
@@ -481,14 +481,14 @@ MTBs
 Tenor
 Cut-off Yield
 1-M
-11.5003%
+12.1055%
 3-M
-11.9999%
+12.4261%
 6-M
-12.3989%
+12.6500%
 12-M
-12.4999%
-(as on Oct 14, 2026)
+12.8900%
+(as on Oct 28, 2026)
 Fixed - Rate PIB
 Tenor
 Cut-off Yield
