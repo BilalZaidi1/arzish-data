@@ -1,20 +1,20 @@
 {
  "v": 1,
- "builtAt": "2026-10-29T08:55:29Z",
+ "builtAt": "2026-10-29T17:35:19Z",
  "market": {
   "asOf": "2026-10-29",
   "fx": {
    "PKR": 1,
-   "USD": 276.7736,
-   "AED": 75.3638,
-   "SAR": 73.8063,
-   "EUR": 307.8263,
-   "GBP": 367.9888
+   "USD": 276.7618,
+   "AED": 75.3606,
+   "SAR": 73.8031,
+   "EUR": 308.4063,
+   "GBP": 368.6376
   },
-  "fxDate": "2026-10-28",
+  "fxDate": "2026-10-29",
   "goldTola": 440636,
   "silverTola": 6256,
-  "goldUsdOz": 4036.09,
+  "goldUsdOz": 4045.43,
   "goldDate": "2026-10-17",
   "policyRate": 12.0,
   "policyDate": "2026-09-14",
@@ -43,27 +43,27 @@
   },
   "nssDate": "2026-10-21",
   "npcUsd": 7.25,
-  "btcUsd": 80830,
-  "btcDate": "2026-10-28",
+  "btcUsd": 80360,
+  "btcDate": "2026-10-29",
   "fedFunds": 3.88,
   "ust10y": 5.05,
-  "kse100": 166841.85,
+  "kse100": 167193.43,
   "kse100Date": "2026-10-29",
-  "kse100Ytd": -4.1,
+  "kse100Ytd": -3.9,
   "kse100Ath": 189167
  },
  "dates": {
-  "fx": "2026-10-28",
+  "fx": "2026-10-29",
   "goldTola": "2026-10-17",
   "silverTola": "2026-10-17",
-  "goldUsdOz": "2026-10-28",
+  "goldUsdOz": "2026-10-29",
   "policyRate": "2026-10-29",
   "cpi": "2026-09",
   "coreCpi": "2026-09",
   "tbill": "2026-10-28",
   "npcUsd": "2026-10-19",
-  "btcUsd": "2026-10-28",
-  "fedFunds": "2026-10-27",
+  "btcUsd": "2026-10-29",
+  "fedFunds": "2026-10-28",
   "ust10y": "2026-10-28",
   "nss.BSC": "2026-10-21",
   "nss.PBA": "2026-10-21",
@@ -144,93 +144,93 @@
  "extra": {
   "kibor": {
    "m3": {
-    "bid": 11.98,
-    "offer": 12.23
+    "bid": 12.19,
+    "offer": 12.44
    },
    "m6": {
-    "bid": 12.21,
-    "offer": 12.46
+    "bid": 12.39,
+    "offer": 12.64
    },
    "m12": {
-    "bid": 12.31,
-    "offer": 12.81
+    "bid": 12.54,
+    "offer": 13.04
    },
-   "asOf": "2026-10-28"
+   "asOf": "2026-10-29"
   },
   "reserves": {
-   "sbp": 21488.6,
-   "banks": 5344.4,
-   "total": 26833.0,
-   "asOf": "2026-10-16"
+   "sbp": 21521.7,
+   "banks": 5232.5,
+   "total": 26754.2,
+   "asOf": "2026-10-23"
   },
   "overnightRepo": {
-   "v": 11.76,
-   "asOf": "2026-10-27"
+   "v": 11.49,
+   "asOf": "2026-10-28"
   },
   "usdM2M": {
-   "v": 276.7736,
-   "asOf": "2026-10-28"
+   "v": 276.7618,
+   "asOf": "2026-10-29"
   },
   "usdWA": {
-   "bid": 276.4631,
-   "offer": 276.9199,
-   "asOf": "2026-10-28"
+   "bid": 276.4475,
+   "offer": 276.9044,
+   "asOf": "2026-10-29"
   },
   "ceiling": 13.0,
   "floor": 11.0,
   "fxAll": {
-   "asOf": "2026-10-28",
+   "asOf": "2026-10-29",
    "rates": {
-    "USD": 276.7736,
-    "AED": 75.3638,
-    "SAR": 73.8063,
-    "EUR": 307.8263,
-    "GBP": 367.9888,
-    "QAR": 76.0367,
-    "KWD": 889.5696,
-    "OMR": 719.3912,
-    "BHD": 736.0999,
-    "CAD": 196.7869,
-    "AUD": 194.6479,
-    "CNY": 41.51,
-    "JPY": 1.7536,
-    "CHF": 333.5117,
-    "MYR": 67.793,
-    "TRY": 5.5548,
-    "SGD": 215.9182,
-    "INR": 2.9091
+    "USD": 276.7618,
+    "AED": 75.3606,
+    "SAR": 73.8031,
+    "EUR": 308.4063,
+    "GBP": 368.6376,
+    "QAR": 76.0335,
+    "KWD": 889.7825,
+    "OMR": 719.0435,
+    "BHD": 736.0686,
+    "CAD": 197.878,
+    "AUD": 195.2524,
+    "CNY": 41.5415,
+    "JPY": 1.7532,
+    "CHF": 333.9037,
+    "MYR": 68.0994,
+    "TRY": 5.5533,
+    "SGD": 216.1285,
+    "INR": 2.9054
    }
   },
   "metals": {
-   "asOf": "2026-10-28",
-   "goldUsdOz": 4036.09,
-   "goldTolaSpotPkr": 419484,
-   "silverUsdOz": 53.873,
-   "silverTolaSpotPkr": 5599
+   "asOf": "2026-10-29",
+   "goldUsdOz": 4045.43,
+   "goldTolaSpotPkr": 419211,
+   "silverUsdOz": 53.467,
+   "silverTolaSpotPkr": 5541
   },
   "crypto": {
-   "asOf": "2026-10-28",
+   "asOf": "2026-10-29",
    "usd": {
-    "BTC": 80830.44,
-    "ETH": 2351.19,
-    "USDT": 0.9986,
-    "USDC": 0.999786,
-    "BNB": 745.45,
-    "SOL": 101.88,
-    "XRP": 1.3273,
-    "DOGE": 0.07961,
-    "ADA": 0.206355,
-    "TRX": 0.330794,
-    "DOT": 1.0039,
-    "LTC": 57.4584,
-    "LINK": 11.7288,
-    "AVAX": 8.9912,
-    "SHIB": 4.96e-06,
-    "BCH": 297.61,
-    "XLM": 0.171677,
-    "POL": 0.092166,
-    "SUI": 0.937063,
-    "PEPE": 4.82e-06
+    "BTC": 80359.63,
+    "ETH": 2330.41,
+    "USDT": 0.998696,
+    "USDC": 0.99971,
+    "BNB": 757.45,
+    "SOL": 100.44,
+    "XRP": 1.2999,
+    "DOGE": 0.078732,
+    "ADA": 0.200216,
+    "TRX": 0.331196,
+    "DOT": 0.984226,
+    "LTC": 57.9196,
+    "LINK": 11.5615,
+    "AVAX": 8.7485,
+    "SHIB": 4.91e-06,
+    "BCH": 280.69,
+    "XLM": 0.169525,
+    "POL": 0.091098,
+    "SUI": 0.918374,
+    "PEPE": 5.13e-06
    }
   },
   "cdns": {
@@ -334,78 +334,78 @@
   "openMarket": {
    "rates": {
     "USD": {
-     "buy": 277.53,
-     "sell": 278.66
+     "buy": 277.48,
+     "sell": 278.62
     },
     "EUR": {
-     "buy": 308.38,
-     "sell": 311.63
+     "buy": 308.85,
+     "sell": 311.73
     },
     "GBP": {
-     "buy": 368.43,
-     "sell": 372.1
+     "buy": 369.03,
+     "sell": 372.32
     },
     "AED": {
-     "buy": 75.6,
-     "sell": 76.18
+     "buy": 75.62,
+     "sell": 76.19
     },
     "SAR": {
-     "buy": 73.93,
-     "sell": 74.47
+     "buy": 73.96,
+     "sell": 74.48
     },
     "JPY": {
      "buy": 1.74,
      "sell": 1.8
     }
    },
-   "asOf": "2026-10-28",
-   "url": "https://www.sbp.org.pk/assets/document/open-market-closing-exchange-rates-28-October-2026.pdf"
+   "asOf": "2026-10-29",
+   "url": "https://www.sbp.org.pk/assets/document/open-market-closing-exchange-rates-29-October-2026.pdf"
   },
   "psx": {
    "asOf": "2026-10-29",
-   "time": "13:50",
-   "state": "Open",
-   "intraday": true,
+   "time": "18:52",
+   "state": "Closed",
+   "intraday": false,
    "breadth": {
-    "advance": 254,
-    "decline": 222,
-    "unchanged": 16
+    "advance": 232,
+    "decline": 232,
+    "unchanged": 35
    },
    "indices": {
     "KSE100": {
-     "v": 166841.85,
+     "v": 167193.43,
      "high": 167483.48,
      "low": 165907.29,
-     "chg": 1105.1,
-     "chgPct": 0.67
+     "chg": 1456.68,
+     "chgPct": 0.88
     },
     "ALLSHR": {
-     "v": 100914.69,
-     "high": 101263.57,
+     "v": 101164.94,
+     "high": 101276.41,
      "low": 100434.99,
-     "chg": 555.86,
-     "chgPct": 0.55
+     "chg": 806.11,
+     "chgPct": 0.8
     },
     "KSE30": {
-     "v": 49236.36,
+     "v": 49320.68,
      "high": 49456.24,
      "low": 48890.27,
-     "chg": 397.98,
-     "chgPct": 0.81
+     "chg": 482.3,
+     "chgPct": 0.99
     },
     "KMI30": {
-     "v": 238646.38,
+     "v": 238958.15,
      "high": 239790.13,
      "low": 237403.03,
-     "chg": 1688.79,
-     "chgPct": 0.71
+     "chg": 2000.56,
+     "chgPct": 0.84
     },
     "KMIALLSHR": {
-     "v": 65121.7,
-     "high": 65383.91,
+     "v": 65336.05,
+     "high": 65394.56,
      "low": 64886.67,
-     "chg": 314.07,
-     "chgPct": 0.48
+     "chg": 528.42,
+     "chgPct": 0.82
     }
    },
    "kse": {
@@ -424,44 +424,44 @@
  "status": {
   "sbp": {
    "ok": true,
-   "at": "2026-10-29T08:54:06Z"
+   "at": "2026-10-29T17:34:03Z"
   },
   "sbp_open": {
    "ok": true,
-   "at": "2026-10-29T08:54:25Z"
+   "at": "2026-10-29T17:34:06Z"
   },
   "psx": {
    "ok": true,
-   "at": "2026-10-29T08:54:52Z"
+   "at": "2026-10-29T17:34:43Z"
   },
   "funds": {
    "ok": true,
-   "at": "2026-10-29T08:54:55Z"
+   "at": "2026-10-29T17:34:46Z"
   },
   "cdns": {
    "ok": false,
-   "at": "2026-10-29T08:55:06Z",
+   "at": "2026-10-29T17:34:57Z",
    "error": "RuntimeError: https://savings.gov.pk/latest-profit-rates/: HTTPSConnectionPool(host='savings.gov.pk', port=443): Max retries exceeded with url: /latest-profit-rates/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))"
   },
   "fx": {
    "ok": true,
-   "at": "2026-10-29T08:55:06Z"
+   "at": "2026-10-29T17:34:57Z"
   },
   "pbs": {
    "ok": true,
-   "at": "2026-10-29T08:55:09Z"
+   "at": "2026-10-29T17:34:59Z"
   },
   "treasury": {
    "ok": true,
-   "at": "2026-10-29T08:55:28Z"
+   "at": "2026-10-29T17:35:18Z"
   },
   "nyfed": {
    "ok": true,
-   "at": "2026-10-29T08:55:28Z"
+   "at": "2026-10-29T17:35:19Z"
   },
   "bls": {
    "ok": true,
-   "at": "2026-10-29T08:55:29Z"
+   "at": "2026-10-29T17:35:19Z"
   }
  },
  "review": [

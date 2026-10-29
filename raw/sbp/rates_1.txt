@@ -319,6 +319,10 @@ Pasban Remittance Reward Scheme
 Read More
 about
 Pasban Remittance Reward Scheme
+A centralized digital financing portal for SMEs
+Read More
+about
+A centralized digital financing portal for SMEs
 Monetary Policy
 MPC has decided to increase the policy rate by 50 bps to 12% w.e.f. October 27, 2026.
 Read More
@@ -361,15 +365,18 @@ Circulars
 Notifications
 Data Calendar
 Publications
+October 29 2026
+SBP Launches SMEConnect to Simplify SME Financing and Enhance Transparency
 October 28 2026
 Decisive, evidence-based policies key to lasting economic stability: Governor SBP
 October 26 2026
 Monetary Policy Statement - 26 October 2026
 October 17 2026
 Governor SBP updates foreign investors on Pakistan’s economic resilience and macroeconomic outlook
-October 13 2026
-SBP launches Banking on Equality Policy 2026 re-affirming its commitment to reduce the gender gap in financial inclusion
 View all
+October 29, 2026
+SH&SFD Circular No. 08 of 2026
+Launch of SMEConnect - the Centralized SME Financing Portal
 October 28, 2026
 SH&SFD Circular No. 07 of 2026
 Financing Framework for Small Enterprises and Small Farmers under Wholesale and Agency Arrangements
@@ -379,9 +386,6 @@ Revised Instructions - Export of 200,000 MT of Sugar
 October 28, 2026
 BPRD Circular No. 03 of 2026
 Handbook for Licensing/ Authorization of Regulated Entities
-October 27, 2026
-BPRD Circular No. 02 of 2026
-Minimum Capital Requirements (MCR) for Banks and DFIs
 View all
 August 27, 2026
 No. PSP&OD/DPS/443723/2026
@@ -431,32 +435,32 @@ SBP Overnight Reverse
 11.00%
 p.a.
 Liquid Foreign Exchange Reserves (USD million)
-As on 16- October - 2026
+As on 23- October - 2026
 SBP’s Reserves
-21,488.6
+21,521.7
 Bank’s Reserves
-5,344.4
+5,232.5
 Total Reserves
-26,833.0
+26,754.2
 Money Market Interest Rates
 Weighted - average overnight repo
 rate
-As on 27-Oct-26
-11.76%
+As on 28-Oct-26
+11.49%
 p.a.
-KIBOR As on 28- Oct - 26
+KIBOR As on 29- Oct - 26
 Tenor
 BID
 Offer
 3-M
-11.98
-12.23
+12.19
+12.44
 6-M
-12.21
-12.46
+12.39
+12.64
 12-M
-12.31
-12.81
+12.54
+13.04
 Upcoming Auction
 PIB Auction (Fixed Rate)
 07-Oct-26
@@ -468,14 +472,14 @@ Coupon)
 Floating Rate PIB (Quarterly Coupon)
 04-Feb-25
 USD/ PKR Rates
-As on 28- Oct - 2026
+As on 29- Oct - 2026
 M2M Revaluation Rate
-276.7736
+276.7618
 Weighted Average Rate
 BID
-276.4631
+276.4475
 Offer
-276.9199
+276.9044
 Cut-off Rates in the Latest Auctions
 MTBs
 Tenor
@@ -562,17 +566,20 @@ RAAST Payments Pakistan
 Enables free and seamless digital payments.
 DIGITAL SERVICES
 Digital financial solutions that work for all Pakistanis
+SME Connect
+SMEConnect is a centralized digital financing portal to facilitate SMEs’ access to formal finance
+View More
 Sunwai
 A customer complaint portal to streamline and resolve issues directly
-View More
-EasyData
-A portal for seamless data access
 View More
 InvestPak
 A digital platform to invest in government securities
 View More
 Roshan Digital Account
 Roshan Digital Account is a major initiative of State Bank of Pakistan, in collaboration with commercial banks operating in Pakistan...
+View More
+EasyData
+A portal for seamless data access
 View More
 Media Center
 Browse trending topics – from speeches to podcasts
