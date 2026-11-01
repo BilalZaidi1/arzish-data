@@ -129,7 +129,7 @@
    }
   },
   "date": "2026-10-30",
-  "time": "18:55",
+  "time": "18:54",
   "breadth": {
    "advance": 173,
    "decline": 300,
@@ -153,6 +153,6 @@
   "ytd": -4.4
  },
  "notes": [
-  "KSE100 history from PSX: 2481 rows"
+  "KSE100 history from PSX: 2480 rows"
  ]
 }
