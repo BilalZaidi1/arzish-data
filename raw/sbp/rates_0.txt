@@ -412,14 +412,7 @@ Governor’s Annual Report
 Monthly
 Inflation Monitor
 View all
-Not Later Than November 05 2026
-Inflation Monitor for Oct 26
-Not Later Than November 05 2026
-Banks Floating Average Exchange Rates for Oct 26
-Not Later Than November 09 2026
-Official Reserve Assets for Oct 26
-Not Later Than November 10 2026
-Country wise-Workers' Remittances for Oct 26
+No record found
 View all
 Economic Data
 A snapshot of Pakistan’s key financial and economic indicators
@@ -446,10 +439,10 @@ Total Reserves
 Money Market Interest Rates
 Weighted - average overnight repo
 rate
-As on 29-Oct-26
-11.34%
+As on 30-Oct-26
+12.20%
 p.a.
-KIBOR As on 30- Oct - 26
+KIBOR As on 02- Nov - 26
 Tenor
 BID
 Offer
@@ -457,11 +450,11 @@ Offer
 12.21
 12.46
 6-M
-12.41
-12.66
+12.43
+12.68
 12-M
-12.55
-13.05
+12.53
+13.03
 Upcoming Auction
 PIB Auction (Fixed Rate)
 07-Oct-26
@@ -473,14 +466,14 @@ Coupon)
 Floating Rate PIB (Quarterly Coupon)
 04-Feb-25
 USD/ PKR Rates
-As on 30- Oct - 2026
+As on 02- Nov - 2026
 M2M Revaluation Rate
-276.7522
+276.7219
 Weighted Average Rate
 BID
-276.4421
+276.4052
 Offer
-276.899
+276.8621
 Cut-off Rates in the Latest Auctions
 MTBs
 Tenor
