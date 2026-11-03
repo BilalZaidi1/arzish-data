@@ -1,46 +1,46 @@
 {
- "builtAt": "2026-11-03T10:03:57Z",
+ "builtAt": "2026-11-03T18:41:48Z",
  "sources": {
   "sbp": {
    "ok": true,
-   "at": "2026-11-03T10:02:33Z"
+   "at": "2026-11-03T18:40:27Z"
   },
   "sbp_open": {
    "ok": true,
-   "at": "2026-11-03T10:02:50Z"
+   "at": "2026-11-03T18:40:29Z"
   },
   "psx": {
    "ok": true,
-   "at": "2026-11-03T10:03:21Z"
+   "at": "2026-11-03T18:40:54Z"
   },
   "funds": {
    "ok": true,
-   "at": "2026-11-03T10:03:24Z"
+   "at": "2026-11-03T18:41:15Z"
   },
   "cdns": {
    "ok": false,
-   "at": "2026-11-03T10:03:35Z",
+   "at": "2026-11-03T18:41:26Z",
    "error": "RuntimeError: https://savings.gov.pk/latest-profit-rates/: HTTPSConnectionPool(host='savings.gov.pk', port=443): Max retries exceeded with url: /latest-profit-rates/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))"
   },
   "fx": {
    "ok": true,
-   "at": "2026-11-03T10:03:35Z"
+   "at": "2026-11-03T18:41:26Z"
   },
   "pbs": {
    "ok": true,
-   "at": "2026-11-03T10:03:40Z"
+   "at": "2026-11-03T18:41:30Z"
   },
   "treasury": {
    "ok": true,
-   "at": "2026-11-03T10:03:57Z"
+   "at": "2026-11-03T18:41:47Z"
   },
   "nyfed": {
    "ok": true,
-   "at": "2026-11-03T10:03:57Z"
+   "at": "2026-11-03T18:41:48Z"
   },
   "bls": {
    "ok": true,
-   "at": "2026-11-03T10:03:57Z"
+   "at": "2026-11-03T18:41:48Z"
   }
  }
 }

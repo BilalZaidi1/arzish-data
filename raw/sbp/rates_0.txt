@@ -366,15 +366,18 @@ Circulars
 Notifications
 Data Calendar
 Publications
+November 03 2026
+SBP Launches Mojaloop Accelerator Program Under New Innovation Hub Collaboration Framework
+November 03 2026
+Pakistan Puts Women, Farmers and Small Businesses at the Heart of Its Green Finance Agenda: SBP Governor
 October 30 2026
 SBP Releases Draft Open Banking Regulations for Public Consultation
 October 29 2026
 SBP Launches SMEConnect to Simplify SME Financing and Enhance Transparency
-October 28 2026
-Decisive, evidence-based policies key to lasting economic stability: Governor SBP
-October 26 2026
-Monetary Policy Statement - 26 October 2026
 View all
+November 3, 2026
+BPRD Circular Letter No. 23 of 2026
+PUBLIC HOLIDAY
 October 30, 2026
 DMMD Circular Letter No. 13 of 2026
 RATE OF REMUNERATION ON SPECIAL CASH RESERVE ACCOUNT MAINTAINED WITH SBP AGAINST DEPOSITS RAISED UNDER FE-CIRCULAR 25 OF 1998
@@ -384,9 +387,6 @@ Launch of SMEConnect - the Centralized SME Financing Portal
 October 28, 2026
 SH&SFD Circular No. 07 of 2026
 Financing Framework for Small Enterprises and Small Farmers under Wholesale and Agency Arrangements
-October 28, 2026
-EPD Circular Letter No. 16 of 2026
-Revised Instructions - Export of 200,000 MT of Sugar
 View all
 August 27, 2026
 No. PSP&OD/DPS/443723/2026
@@ -439,19 +439,19 @@ Total Reserves
 Money Market Interest Rates
 Weighted - average overnight repo
 rate
-As on 30-Oct-26
-12.20%
+As on 02-Nov-26
+12.12%
 p.a.
-KIBOR As on 02- Nov - 26
+KIBOR As on 03- Nov - 26
 Tenor
 BID
 Offer
 3-M
-12.21
-12.46
+12.2
+12.45
 6-M
-12.43
-12.68
+12.42
+12.67
 12-M
 12.53
 13.03
@@ -466,14 +466,14 @@ Coupon)
 Floating Rate PIB (Quarterly Coupon)
 04-Feb-25
 USD/ PKR Rates
-As on 02- Nov - 2026
+As on 03- Nov - 2026
 M2M Revaluation Rate
-276.7219
+276.7137
 Weighted Average Rate
 BID
-276.4052
+276.3975
 Offer
-276.8621
+276.8544
 Cut-off Rates in the Latest Auctions
 MTBs
 Tenor
