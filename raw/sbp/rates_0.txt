@@ -439,22 +439,22 @@ Total Reserves
 Money Market Interest Rates
 Weighted - average overnight repo
 rate
-As on 02-Nov-26
-12.12%
+As on 03-Nov-26
+12.02%
 p.a.
-KIBOR As on 03- Nov - 26
+KIBOR As on 04- Nov - 26
 Tenor
 BID
 Offer
 3-M
-12.2
-12.45
+12.19
+12.44
 6-M
 12.42
 12.67
 12-M
-12.53
-13.03
+12.54
+13.04
 Upcoming Auction
 PIB Auction (Fixed Rate)
 07-Oct-26
@@ -466,14 +466,14 @@ Coupon)
 Floating Rate PIB (Quarterly Coupon)
 04-Feb-25
 USD/ PKR Rates
-As on 03- Nov - 2026
+As on 04- Nov - 2026
 M2M Revaluation Rate
-276.7137
+276.704
 Weighted Average Rate
 BID
-276.3975
+276.3921
 Offer
-276.8544
+276.849
 Cut-off Rates in the Latest Auctions
 MTBs
 Tenor
