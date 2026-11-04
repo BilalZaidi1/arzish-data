@@ -1,8 +1,8 @@
 {
  "v": 1,
- "builtAt": "2026-11-03T18:41:48Z",
+ "builtAt": "2026-11-04T08:00:01Z",
  "market": {
-  "asOf": "2026-11-03",
+  "asOf": "2026-11-04",
   "fx": {
    "PKR": 1,
    "USD": 276.7137,
@@ -46,10 +46,10 @@
   "btcUsd": 76469,
   "btcDate": "2026-11-03",
   "fedFunds": 3.88,
-  "ust10y": 4.91,
-  "kse100": 168018.86,
-  "kse100Date": "2026-11-03",
-  "kse100Ytd": -3.5,
+  "ust10y": 4.95,
+  "kse100": 170576.6,
+  "kse100Date": "2026-11-04",
+  "kse100Ytd": -2.0,
   "kse100Ath": 189167
  },
  "dates": {
@@ -57,14 +57,14 @@
   "goldTola": "2026-10-17",
   "silverTola": "2026-10-17",
   "goldUsdOz": "2026-11-03",
-  "policyRate": "2026-11-03",
+  "policyRate": "2026-11-04",
   "cpi": "2026-09",
   "coreCpi": "2026-09",
   "tbill": "2026-10-28",
   "npcUsd": "2026-10-19",
   "btcUsd": "2026-11-03",
   "fedFunds": "2026-11-02",
-  "ust10y": "2026-11-02",
+  "ust10y": "2026-11-03",
   "nss.BSC": "2026-10-21",
   "nss.PBA": "2026-10-21",
   "nss.SSC": "2026-10-01",
@@ -76,9 +76,9 @@
   "nss.SISA": "2026-10-21",
   "nss.SHUHADA": "2026-10-21",
   "nss.PRIZE": "2026-10-01",
-  "kse100": "2026-11-03",
-  "kse100Ytd": "2026-11-03",
-  "kse100Ath": "2026-11-03"
+  "kse100": "2026-11-04",
+  "kse100Ytd": "2026-11-04",
+  "kse100Ath": "2026-11-04"
  },
  "sources": {
   "seed": "Arzish built-in snapshot of 21 Oct 2026",
@@ -312,13 +312,13 @@
    ]
   },
   "usTreasury": {
-   "asOf": "2026-11-02",
+   "asOf": "2026-11-03",
    "m3": 4.21,
-   "y1": 4.38,
-   "y2": 4.59,
-   "y5": 4.7,
-   "y10": 4.91,
-   "y30": 5.28
+   "y1": 4.4,
+   "y2": 4.61,
+   "y5": 4.74,
+   "y10": 4.95,
+   "y30": 5.32
   },
   "usCpi": {
    "yoy": 3.74,
@@ -362,50 +362,50 @@
    "url": "https://www.sbp.org.pk/assets/document/open-market-closing-exchange-rates-3-November-2026.pdf"
   },
   "psx": {
-   "asOf": "2026-11-03",
-   "time": "18:07",
-   "state": "Closed",
-   "intraday": false,
+   "asOf": "2026-11-04",
+   "time": "12:55",
+   "state": "Open",
+   "intraday": true,
    "breadth": {
-    "advance": 270,
-    "decline": 189,
-    "unchanged": 41
+    "advance": 389,
+    "decline": 93,
+    "unchanged": 9
    },
    "indices": {
     "KSE100": {
-     "v": 168018.86,
-     "high": 168469.78,
-     "low": 167308.65,
-     "chg": 1454.8,
-     "chgPct": 0.87
+     "v": 170576.6,
+     "high": 170578.83,
+     "low": 168355.26,
+     "chg": 2557.74,
+     "chgPct": 1.52
     },
     "ALLSHR": {
-     "v": 101001.36,
-     "high": 101385.22,
-     "low": 100689.67,
-     "chg": 661.96,
-     "chgPct": 0.66
+     "v": 102501.48,
+     "high": 102521.51,
+     "low": 101210.05,
+     "chg": 1500.12,
+     "chgPct": 1.49
     },
     "KSE30": {
-     "v": 49411.77,
-     "high": 49520.06,
-     "low": 49209.72,
-     "chg": 408.34,
-     "chgPct": 0.83
+     "v": 50198.0,
+     "high": 50199.61,
+     "low": 49490.58,
+     "chg": 786.23,
+     "chgPct": 1.59
     },
     "KMI30": {
-     "v": 240580.98,
-     "high": 240902.51,
-     "low": 239209.23,
-     "chg": 2354.57,
-     "chgPct": 0.99
+     "v": 244843.73,
+     "high": 244843.73,
+     "low": 240888.54,
+     "chg": 4262.75,
+     "chgPct": 1.77
     },
     "KMIALLSHR": {
-     "v": 65309.15,
-     "high": 65459.54,
-     "low": 65022.77,
-     "chg": 464.0,
-     "chgPct": 0.72
+     "v": 66369.52,
+     "high": 66382.82,
+     "low": 65460.17,
+     "chg": 1060.37,
+     "chgPct": 1.62
     }
    },
    "kse": {
@@ -424,44 +424,44 @@
  "status": {
   "sbp": {
    "ok": true,
-   "at": "2026-11-03T18:40:27Z"
+   "at": "2026-11-04T07:58:39Z"
   },
   "sbp_open": {
    "ok": true,
-   "at": "2026-11-03T18:40:29Z"
+   "at": "2026-11-04T07:58:58Z"
   },
   "psx": {
    "ok": true,
-   "at": "2026-11-03T18:40:54Z"
+   "at": "2026-11-04T07:59:24Z"
   },
   "funds": {
    "ok": true,
-   "at": "2026-11-03T18:41:15Z"
+   "at": "2026-11-04T07:59:27Z"
   },
   "cdns": {
    "ok": false,
-   "at": "2026-11-03T18:41:26Z",
+   "at": "2026-11-04T07:59:38Z",
    "error": "RuntimeError: https://savings.gov.pk/latest-profit-rates/: HTTPSConnectionPool(host='savings.gov.pk', port=443): Max retries exceeded with url: /latest-profit-rates/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))"
   },
   "fx": {
    "ok": true,
-   "at": "2026-11-03T18:41:26Z"
+   "at": "2026-11-04T07:59:38Z"
   },
   "pbs": {
    "ok": true,
-   "at": "2026-11-03T18:41:30Z"
+   "at": "2026-11-04T07:59:42Z"
   },
   "treasury": {
    "ok": true,
-   "at": "2026-11-03T18:41:47Z"
+   "at": "2026-11-04T08:00:00Z"
   },
   "nyfed": {
    "ok": true,
-   "at": "2026-11-03T18:41:48Z"
+   "at": "2026-11-04T08:00:01Z"
   },
   "bls": {
    "ok": true,
-   "at": "2026-11-03T18:41:48Z"
+   "at": "2026-11-04T08:00:01Z"
   }
  },
  "review": [
