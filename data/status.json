@@ -1,46 +1,47 @@
 {
- "builtAt": "2026-11-05T08:30:18Z",
+ "builtAt": "2026-11-05T09:50:52Z",
  "sources": {
   "sbp": {
    "ok": true,
-   "at": "2026-11-05T08:28:58Z"
+   "at": "2026-11-05T09:49:43Z"
   },
   "sbp_open": {
    "ok": true,
-   "at": "2026-11-05T08:29:13Z"
+   "at": "2026-11-05T09:49:59Z"
   },
   "psx": {
-   "ok": true,
-   "at": "2026-11-05T08:29:40Z"
+   "ok": false,
+   "at": "2026-11-05T09:50:09Z",
+   "error": "PSXConnectionError: PSX unreachable after 3 attempts: https://dps.psx.com.pk/trading-panel"
   },
   "funds": {
    "ok": true,
-   "at": "2026-11-05T08:29:43Z"
+   "at": "2026-11-05T09:50:12Z"
   },
   "cdns": {
    "ok": false,
-   "at": "2026-11-05T08:29:54Z",
+   "at": "2026-11-05T09:50:23Z",
    "error": "RuntimeError: https://savings.gov.pk/latest-profit-rates/: HTTPSConnectionPool(host='savings.gov.pk', port=443): Max retries exceeded with url: /latest-profit-rates/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)')))"
   },
   "fx": {
    "ok": true,
-   "at": "2026-11-05T08:29:54Z"
+   "at": "2026-11-05T09:50:23Z"
   },
   "pbs": {
    "ok": true,
-   "at": "2026-11-05T08:29:59Z"
+   "at": "2026-11-05T09:50:31Z"
   },
   "treasury": {
    "ok": true,
-   "at": "2026-11-05T08:30:18Z"
+   "at": "2026-11-05T09:50:51Z"
   },
   "nyfed": {
    "ok": true,
-   "at": "2026-11-05T08:30:18Z"
+   "at": "2026-11-05T09:50:51Z"
   },
   "bls": {
    "ok": true,
-   "at": "2026-11-05T08:30:18Z"
+   "at": "2026-11-05T09:50:52Z"
   }
  }
 }
