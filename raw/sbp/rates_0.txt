@@ -366,14 +366,14 @@ Circulars
 Notifications
 Data Calendar
 Publications
+November 05 2026
+PUBLIC HOLIDAY
 November 03 2026
 SBP Launches Mojaloop Accelerator Program Under New Innovation Hub Collaboration Framework
 November 03 2026
 Pakistan Puts Women, Farmers and Small Businesses at the Heart of Its Green Finance Agenda: SBP Governor
 October 30 2026
 SBP Releases Draft Open Banking Regulations for Public Consultation
-October 29 2026
-SBP Launches SMEConnect to Simplify SME Financing and Enhance Transparency
 View all
 November 3, 2026
 BPRD Circular Letter No. 23 of 2026
@@ -457,7 +457,7 @@ Offer
 13.04
 Upcoming Auction
 PIB Auction (Fixed Rate)
-07-Oct-26
+16-Dec-26
 MTB
 11-Nov-26
 Floating Rate PIB (Semi-Annual
@@ -491,16 +491,16 @@ Fixed - Rate PIB
 Tenor
 Cut-off Yield
 2-Y
-12.3990%
+12.7900%
 3-Y
-12.4900%
+12.6380%
 5-Y
-12.4900%
+12.8000%
 10-Y
-12.5000%
+12.8500%
 15-Y
 Bids Rejected
-(as on September 18, 2026)
+(as on Nov 04, 2026)
 Floating -
 Rate PIBs
 (Quarterly Coupon)
