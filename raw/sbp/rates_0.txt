@@ -436,32 +436,32 @@ SBP Overnight Reverse
 11.00%
 p.a.
 Liquid Foreign Exchange Reserves (USD million)
-As on 23- October - 2026
+As on 30- October - 2026
 SBP’s Reserves
-21,521.7
+21,561.2
 Bank’s Reserves
-5,232.5
+5,303.3
 Total Reserves
-26,754.2
+26,864.5
 Money Market Interest Rates
 Weighted - average overnight repo
 rate
-As on 03-Nov-26
-12.02%
+As on 04-Nov-26
+11.70%
 p.a.
-KIBOR As on 04- Nov - 26
+KIBOR As on 05- Nov - 26
 Tenor
 BID
 Offer
 3-M
-12.19
-12.44
+12.11
+12.36
 6-M
-12.42
-12.67
+12.31
+12.56
 12-M
-12.54
-13.04
+12.42
+12.92
 Upcoming Auction
 PIB Auction (Fixed Rate)
 16-Dec-26
@@ -473,14 +473,14 @@ Coupon)
 Floating Rate PIB (Quarterly Coupon)
 04-Feb-25
 USD/ PKR Rates
-As on 04- Nov - 2026
+As on 05- Nov - 2026
 M2M Revaluation Rate
-276.704
+276.6701
 Weighted Average Rate
 BID
-276.3921
+276.3552
 Offer
-276.849
+276.8121
 Cut-off Rates in the Latest Auctions
 MTBs
 Tenor
