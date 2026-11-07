@@ -1,15 +1,15 @@
 {
  "v": 1,
- "builtAt": "2026-11-06T18:32:00Z",
+ "builtAt": "2026-11-07T07:45:55Z",
  "market": {
-  "asOf": "2026-11-06",
+  "asOf": "2026-11-07",
   "fx": {
    "PKR": 1,
-   "USD": 276.6609,
-   "AED": 75.3331,
-   "SAR": 73.7763,
-   "EUR": 309.7793,
-   "GBP": 371.4346
+   "USD": 276.7882,
+   "AED": 75.3678,
+   "SAR": 73.8102,
+   "EUR": 309.9218,
+   "GBP": 371.6055
   },
   "fxDate": "2026-11-06",
   "goldTola": 440636,
@@ -46,7 +46,7 @@
   "btcUsd": 75561,
   "btcDate": "2026-11-06",
   "fedFunds": 3.88,
-  "ust10y": 4.84,
+  "ust10y": 4.86,
   "kse100": 173886.68,
   "kse100Date": "2026-11-06",
   "kse100Ytd": -0.1,
@@ -64,7 +64,7 @@
   "npcUsd": "2026-10-19",
   "btcUsd": "2026-11-06",
   "fedFunds": "2026-11-05",
-  "ust10y": "2026-11-05",
+  "ust10y": "2026-11-06",
   "nss.BSC": "2026-10-21",
   "nss.PBA": "2026-10-21",
   "nss.SSC": "2026-10-01",
@@ -84,7 +84,7 @@
   "seed": "Arzish built-in snapshot of 21 Oct 2026",
   "policyRate": "sbp",
   "tbill": "sbp",
-  "fx": "sbp",
+  "fx": "fx",
   "goldUsdOz": "fx",
   "btcUsd": "fx",
   "nss": "cdns",
@@ -181,24 +181,24 @@
   "fxAll": {
    "asOf": "2026-11-06",
    "rates": {
-    "USD": 276.6609,
-    "AED": 75.3331,
-    "SAR": 73.7763,
-    "EUR": 309.7793,
-    "GBP": 371.4346,
-    "QAR": 76.0057,
-    "KWD": 890.478,
-    "OMR": 718.7317,
-    "BHD": 735.8003,
-    "CAD": 196.9928,
-    "AUD": 190.6199,
-    "CNY": 41.4827,
-    "JPY": 1.7531,
-    "CHF": 338.8017,
-    "MYR": 68.1481,
-    "TRY": 5.5198,
-    "SGD": 216.0634,
-    "INR": 2.9391
+    "USD": 276.7882,
+    "AED": 75.3678,
+    "SAR": 73.8102,
+    "EUR": 309.9218,
+    "GBP": 371.6055,
+    "QAR": 76.0407,
+    "KWD": 890.8877,
+    "OMR": 719.0624,
+    "BHD": 736.1389,
+    "CAD": 197.0834,
+    "AUD": 190.7076,
+    "CNY": 41.5018,
+    "JPY": 1.7539,
+    "CHF": 338.9576,
+    "MYR": 68.1795,
+    "TRY": 5.5223,
+    "SGD": 216.1628,
+    "INR": 2.9405
    }
   },
   "metals": {
@@ -312,13 +312,13 @@
    ]
   },
   "usTreasury": {
-   "asOf": "2026-11-05",
-   "m3": 4.17,
-   "y1": 4.28,
-   "y2": 4.46,
-   "y5": 4.59,
-   "y10": 4.84,
-   "y30": 5.25
+   "asOf": "2026-11-06",
+   "m3": 4.19,
+   "y1": 4.33,
+   "y2": 4.51,
+   "y5": 4.64,
+   "y10": 4.86,
+   "y30": 5.26
   },
   "usCpi": {
    "yoy": 3.74,
@@ -423,45 +423,47 @@
  },
  "status": {
   "sbp": {
-   "ok": true,
-   "at": "2026-11-06T18:30:48Z"
+   "ok": false,
+   "at": "2026-11-07T07:44:35Z",
+   "error": "RuntimeError: SBP rates not found. https://www.sbp.org.pk/script/rates.html: https://www.sbp.org.pk/script/rates.html"
   },
   "sbp_open": {
-   "ok": true,
-   "at": "2026-11-06T18:30:54Z"
+   "ok": false,
+   "at": "2026-11-07T07:44:47Z",
+   "error": "RuntimeError: open-market PDF not found (tried 40 URLs; 0 links on SBP's list)"
   },
   "psx": {
    "ok": true,
-   "at": "2026-11-06T18:31:19Z"
+   "at": "2026-11-07T07:45:14Z"
   },
   "funds": {
    "ok": true,
-   "at": "2026-11-06T18:31:22Z"
+   "at": "2026-11-07T07:45:16Z"
   },
   "cdns": {
    "ok": false,
-   "at": "2026-11-06T18:31:34Z",
+   "at": "2026-11-07T07:45:27Z",
    "error": "RuntimeError: https://savings.gov.pk/latest-profit-rates/: HTTPSConnectionPool(host='savings.gov.pk', port=443): Max retries exceeded with url: /latest-profit-rates/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)')))"
   },
   "fx": {
    "ok": true,
-   "at": "2026-11-06T18:31:34Z"
+   "at": "2026-11-07T07:45:27Z"
   },
   "pbs": {
    "ok": true,
-   "at": "2026-11-06T18:31:39Z"
+   "at": "2026-11-07T07:45:35Z"
   },
   "treasury": {
    "ok": true,
-   "at": "2026-11-06T18:31:59Z"
+   "at": "2026-11-07T07:45:54Z"
   },
   "nyfed": {
    "ok": true,
-   "at": "2026-11-06T18:32:00Z"
+   "at": "2026-11-07T07:45:54Z"
   },
   "bls": {
    "ok": true,
-   "at": "2026-11-06T18:32:00Z"
+   "at": "2026-11-07T07:45:55Z"
   }
  },
  "review": [

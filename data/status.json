@@ -1,46 +1,48 @@
 {
- "builtAt": "2026-11-06T18:32:00Z",
+ "builtAt": "2026-11-07T07:45:55Z",
  "sources": {
   "sbp": {
-   "ok": true,
-   "at": "2026-11-06T18:30:48Z"
+   "ok": false,
+   "at": "2026-11-07T07:44:35Z",
+   "error": "RuntimeError: SBP rates not found. https://www.sbp.org.pk/script/rates.html: https://www.sbp.org.pk/script/rates.html"
   },
   "sbp_open": {
-   "ok": true,
-   "at": "2026-11-06T18:30:54Z"
+   "ok": false,
+   "at": "2026-11-07T07:44:47Z",
+   "error": "RuntimeError: open-market PDF not found (tried 40 URLs; 0 links on SBP's list)"
   },
   "psx": {
    "ok": true,
-   "at": "2026-11-06T18:31:19Z"
+   "at": "2026-11-07T07:45:14Z"
   },
   "funds": {
    "ok": true,
-   "at": "2026-11-06T18:31:22Z"
+   "at": "2026-11-07T07:45:16Z"
   },
   "cdns": {
    "ok": false,
-   "at": "2026-11-06T18:31:34Z",
+   "at": "2026-11-07T07:45:27Z",
    "error": "RuntimeError: https://savings.gov.pk/latest-profit-rates/: HTTPSConnectionPool(host='savings.gov.pk', port=443): Max retries exceeded with url: /latest-profit-rates/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)')))"
   },
   "fx": {
    "ok": true,
-   "at": "2026-11-06T18:31:34Z"
+   "at": "2026-11-07T07:45:27Z"
   },
   "pbs": {
    "ok": true,
-   "at": "2026-11-06T18:31:39Z"
+   "at": "2026-11-07T07:45:35Z"
   },
   "treasury": {
    "ok": true,
-   "at": "2026-11-06T18:31:59Z"
+   "at": "2026-11-07T07:45:54Z"
   },
   "nyfed": {
    "ok": true,
-   "at": "2026-11-06T18:32:00Z"
+   "at": "2026-11-07T07:45:54Z"
   },
   "bls": {
    "ok": true,
-   "at": "2026-11-06T18:32:00Z"
+   "at": "2026-11-07T07:45:55Z"
   }
  }
 }
