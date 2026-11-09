@@ -128,8 +128,8 @@
     "chgPct": -0.96
    }
   },
-  "date": "2026-11-06",
-  "time": "18:42",
+  "date": "2026-11-09",
+  "time": "13:29",
   "breadth": {
    "advance": 190,
    "decline": 277,
@@ -141,7 +141,7 @@
  "count": 760,
  "kse": {
   "level": 173886.68,
-  "date": "2026-11-06",
+  "date": "2026-11-09",
   "ath": {
    "date": "2026-01-23",
    "v": 189166.83
@@ -153,6 +153,6 @@
   "ytd": -0.1
  },
  "notes": [
-  "KSE100 history from PSX: 2480 rows"
+  "KSE100 history from PSX: 2479 rows"
  ]
 }
