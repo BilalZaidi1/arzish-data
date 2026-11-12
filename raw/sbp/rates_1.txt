@@ -375,6 +375,9 @@ SBP Launches Mojaloop Accelerator Program Under New Innovation Hub Collaboration
 November 03 2026
 Pakistan Puts Women, Farmers and Small Businesses at the Heart of Its Green Finance Agenda: SBP Governor
 View all
+November 12, 2026
+BPRD Circular Letter No. 24 of 2026
+Currency Transaction Report (CTR) under Anti-Money Laundering Act, 2010
 November 3, 2026
 BPRD Circular Letter No. 23 of 2026
 PUBLIC HOLIDAY
@@ -384,9 +387,6 @@ RATE OF REMUNERATION ON SPECIAL CASH RESERVE ACCOUNT MAINTAINED WITH SBP AGAINST
 October 29, 2026
 SH&SFD Circular No. 08 of 2026
 Launch of SMEConnect - the Centralized SME Financing Portal
-October 28, 2026
-SH&SFD Circular No. 07 of 2026
-Financing Framework for Small Enterprises and Small Farmers under Wholesale and Agency Arrangements
 View all
 August 27, 2026
 No. PSP&OD/DPS/443723/2026
@@ -412,14 +412,14 @@ Governor’s Annual Report
 Monthly
 Inflation Monitor
 View all
-Not Later Than November 16 2026
-Bank Lending Survey (BLS) for Q1 FY27
-Not Later Than November 16 2026
-Advances Classified by Securities and Borrowers for Oct 26
-Not Later Than November 16 2026
-Credit / Loans Classified by Borrowers for Oct 26
-Not Later Than November 16 2026
-Loans to Private Sector Business by type of Finance for Oct 26
+Not Later Than November 17 2026
+Export Receipts by Selected Countries/Regions for Oct 26
+Not Later Than November 17 2026
+Import payments by commodities and groups for Oct 26
+Not Later Than November 17 2026
+Import payments by all commodities for Oct 26
+Not Later Than November 17 2026
+Import Payments by all countries for Oct 26
 View all
 Economic Data
 A snapshot of Pakistan’s key financial and economic indicators
@@ -436,32 +436,32 @@ SBP Overnight Reverse
 11.00%
 p.a.
 Liquid Foreign Exchange Reserves (USD million)
-As on 30- October - 2026
+As on 06- November - 2026
 SBP’s Reserves
-21,561.2
+21,572.5
 Bank’s Reserves
-5,303.3
+5,266.2
 Total Reserves
-26,864.5
+26,838.7
 Money Market Interest Rates
 Weighted - average overnight repo
 rate
-As on 10-Nov-26
-12.31%
+As on 11-Nov-26
+12.34%
 p.a.
-KIBOR As on 11- Nov - 26
+KIBOR As on 12- Nov - 26
 Tenor
 BID
 Offer
 3-M
-12.1
-12.35
-6-M
+12
 12.25
-12.5
+6-M
+12.14
+12.39
 12-M
-12.38
-12.88
+12.28
+12.78
 Upcoming Auction
 PIB Auction (Fixed Rate)
 16-Dec-26
@@ -473,14 +473,14 @@ Coupon)
 Floating Rate PIB (Quarterly Coupon)
 04-Feb-25
 USD/ PKR Rates
-As on 11- Nov - 2026
+As on 12- Nov - 2026
 M2M Revaluation Rate
-276.6214
+276.6137
 Weighted Average Rate
 BID
-276.3052
+276.2975
 Offer
-276.7621
+276.7544
 Cut-off Rates in the Latest Auctions
 MTBs
 Tenor
