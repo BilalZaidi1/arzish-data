@@ -412,14 +412,14 @@ Governor’s Annual Report
 Monthly
 Inflation Monitor
 View all
-Not Later Than November 13 2026
-Central Bank Survey** for Oct26
-Not Later Than November 13 2026
-Foreign Currency Deposits for Oct 26
 Not Later Than November 16 2026
 Bank Lending Survey (BLS) for Q1 FY27
 Not Later Than November 16 2026
 Advances Classified by Securities and Borrowers for Oct 26
+Not Later Than November 16 2026
+Credit / Loans Classified by Borrowers for Oct 26
+Not Later Than November 16 2026
+Loans to Private Sector Business by type of Finance for Oct 26
 View all
 Economic Data
 A snapshot of Pakistan’s key financial and economic indicators
@@ -466,7 +466,7 @@ Upcoming Auction
 PIB Auction (Fixed Rate)
 16-Dec-26
 MTB
-11-Nov-26
+25-Nov-26
 Floating Rate PIB (Semi-Annual
 Coupon)
 23-Jun-26
@@ -486,14 +486,14 @@ MTBs
 Tenor
 Cut-off Yield
 1-M
-12.1055%
+11.8838%
 3-M
-12.4261%
+11.9999%
 6-M
-12.6500%
+12.1900%
 12-M
-12.8900%
-(as on Oct 28, 2026)
+12.4100%
+(as on Nov 11, 2026)
 Fixed - Rate PIB
 Tenor
 Cut-off Yield
