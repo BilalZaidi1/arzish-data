@@ -1,47 +1,47 @@
 {
- "builtAt": "2026-11-12T19:11:39Z",
+ "builtAt": "2026-11-13T08:44:44Z",
  "sources": {
   "sbp": {
    "ok": true,
-   "at": "2026-11-12T19:10:04Z"
+   "at": "2026-11-13T08:43:43Z"
   },
   "sbp_open": {
    "ok": true,
-   "at": "2026-11-12T19:10:23Z"
+   "at": "2026-11-13T08:43:56Z"
   },
   "psx": {
    "ok": true,
-   "at": "2026-11-12T19:10:51Z"
+   "at": "2026-11-13T08:44:08Z"
   },
   "funds": {
    "ok": true,
-   "at": "2026-11-12T19:10:53Z"
+   "at": "2026-11-13T08:44:10Z"
   },
   "cdns": {
    "ok": false,
-   "at": "2026-11-12T19:11:04Z",
+   "at": "2026-11-13T08:44:21Z",
    "error": "RuntimeError: https://savings.gov.pk/latest-profit-rates/: HTTPSConnectionPool(host='savings.gov.pk', port=443): Max retries exceeded with url: /latest-profit-rates/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)')))"
   },
   "fx": {
    "ok": true,
-   "at": "2026-11-12T19:11:04Z"
+   "at": "2026-11-13T08:44:21Z"
   },
   "pbs": {
    "ok": true,
-   "at": "2026-11-12T19:11:09Z"
+   "at": "2026-11-13T08:44:26Z"
   },
   "treasury": {
    "ok": true,
-   "at": "2026-11-12T19:11:26Z"
+   "at": "2026-11-13T08:44:44Z"
   },
   "nyfed": {
    "ok": true,
-   "at": "2026-11-12T19:11:26Z"
+   "at": "2026-11-13T08:44:44Z"
   },
   "bls": {
    "ok": false,
-   "at": "2026-11-12T19:11:39Z",
-   "error": "RuntimeError: https://api.bls.gov/publicAPI/v1/timeseries/data/CUUR0000SA0: 503 Server Error: Service Unavailable for url: https://api.bls.gov/publicAPI/v1/timeseries/data/CUUR0000SA0"
+   "at": "2026-11-13T08:44:44Z",
+   "error": "ValueError: no year-ago CPI"
   }
  }
 }
