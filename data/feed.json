@@ -1,20 +1,20 @@
 {
  "v": 1,
- "builtAt": "2026-11-13T18:49:28Z",
+ "builtAt": "2026-11-14T08:00:16Z",
  "market": {
-  "asOf": "2026-11-13",
+  "asOf": "2026-11-14",
   "fx": {
    "PKR": 1,
    "USD": 276.6036,
-   "AED": 75.3175,
-   "SAR": 73.761,
-   "EUR": 306.4001,
-   "GBP": 366.69
+   "AED": 75.3176,
+   "SAR": 73.7609,
+   "EUR": 305.8851,
+   "GBP": 365.9145
   },
   "fxDate": "2026-11-13",
   "goldTola": 440636,
   "silverTola": 6256,
-  "goldUsdOz": 3972.79,
+  "goldUsdOz": 3904.21,
   "goldDate": "2026-10-17",
   "policyRate": 12.0,
   "policyDate": "2026-09-14",
@@ -43,10 +43,10 @@
   },
   "nssDate": "2026-10-21",
   "npcUsd": 7.25,
-  "btcUsd": 73454,
-  "btcDate": "2026-11-12",
+  "btcUsd": 68048,
+  "btcDate": "2026-11-13",
   "fedFunds": 3.88,
-  "ust10y": 5.1,
+  "ust10y": 5.15,
   "kse100": 177873.87,
   "kse100Date": "2026-11-13",
   "kse100Ytd": 2.2,
@@ -56,15 +56,15 @@
   "fx": "2026-11-13",
   "goldTola": "2026-10-17",
   "silverTola": "2026-10-17",
-  "goldUsdOz": "2026-11-12",
-  "policyRate": "2026-11-13",
+  "goldUsdOz": "2026-11-13",
+  "policyRate": "2026-11-14",
   "cpi": "2026-09",
   "coreCpi": "2026-09",
   "tbill": "2026-11-11",
   "npcUsd": "2026-10-19",
-  "btcUsd": "2026-11-12",
+  "btcUsd": "2026-11-13",
   "fedFunds": "2026-11-12",
-  "ust10y": "2026-11-12",
+  "ust10y": "2026-11-13",
   "nss.BSC": "2026-10-21",
   "nss.PBA": "2026-10-21",
   "nss.SSC": "2026-10-01",
@@ -179,58 +179,58 @@
   "ceiling": 13.0,
   "floor": 11.0,
   "fxAll": {
-   "asOf": "2026-11-12",
+   "asOf": "2026-11-13",
    "rates": {
     "USD": 276.6036,
-    "AED": 75.3175,
-    "SAR": 73.761,
-    "EUR": 306.4001,
-    "GBP": 366.69,
+    "AED": 75.3176,
+    "SAR": 73.7609,
+    "EUR": 305.8851,
+    "GBP": 365.9145,
     "QAR": 75.99,
-    "KWD": 888.2664,
-    "OMR": 718.736,
-    "BHD": 735.6479,
-    "CAD": 193.9974,
-    "AUD": 188.9877,
-    "CNY": 41.4794,
-    "JPY": 1.7302,
-    "CHF": 332.0613,
-    "MYR": 67.7445,
-    "TRY": 5.5046,
-    "SGD": 215.1856,
-    "INR": 2.9508
+    "KWD": 888.1517,
+    "OMR": 718.8528,
+    "BHD": 735.648,
+    "CAD": 193.9552,
+    "AUD": 187.9797,
+    "CNY": 41.463,
+    "JPY": 1.7291,
+    "CHF": 330.9812,
+    "MYR": 67.7066,
+    "TRY": 5.4947,
+    "SGD": 214.9266,
+    "INR": 2.9359
    }
   },
   "metals": {
-   "asOf": "2026-11-12",
-   "goldUsdOz": 3972.79,
-   "goldTolaSpotPkr": 412789,
-   "silverUsdOz": 51.45,
-   "silverTolaSpotPkr": 5346
+   "asOf": "2026-11-13",
+   "goldUsdOz": 3904.21,
+   "goldTolaSpotPkr": 405486,
+   "silverUsdOz": 50.031,
+   "silverTolaSpotPkr": 5196
   },
   "crypto": {
-   "asOf": "2026-11-12",
+   "asOf": "2026-11-13",
    "usd": {
-    "BTC": 73454.34,
-    "ETH": 2042.64,
-    "USDT": 0.998485,
-    "USDC": 0.99954,
-    "BNB": 673.81,
-    "SOL": 82.7487,
-    "XRP": 1.0395,
-    "DOGE": 0.066922,
-    "ADA": 0.172803,
-    "TRX": 0.316939,
-    "DOT": 0.838375,
-    "LTC": 49.6601,
-    "LINK": 10.0458,
-    "AVAX": 8.6097,
-    "SHIB": 4.32e-06,
-    "BCH": 228.42,
-    "XLM": 0.146063,
-    "POL": 0.085954,
-    "SUI": 0.812766,
-    "PEPE": 4.53e-06
+    "BTC": 68047.84,
+    "ETH": 1908.4,
+    "USDT": 0.99898,
+    "USDC": 0.999719,
+    "BNB": 625.73,
+    "SOL": 78.4666,
+    "XRP": 1.0116,
+    "DOGE": 0.06372,
+    "ADA": 0.168241,
+    "TRX": 0.311174,
+    "DOT": 0.80821,
+    "LTC": 48.1689,
+    "LINK": 9.7311,
+    "AVAX": 8.0778,
+    "SHIB": 4.2e-06,
+    "BCH": 215.77,
+    "XLM": 0.142537,
+    "POL": 0.086047,
+    "SUI": 0.776232,
+    "PEPE": 4.49e-06
    }
   },
   "cdns": {
@@ -312,13 +312,13 @@
    ]
   },
   "usTreasury": {
-   "asOf": "2026-11-12",
+   "asOf": "2026-11-13",
    "m3": 4.32,
    "y1": 4.65,
-   "y2": 4.86,
-   "y5": 4.95,
-   "y10": 5.1,
-   "y30": 5.43
+   "y2": 4.88,
+   "y5": 4.98,
+   "y10": 5.15,
+   "y30": 5.47
   },
   "usCpi": {
    "yoy": 3.74,
@@ -424,44 +424,44 @@
  "status": {
   "sbp": {
    "ok": true,
-   "at": "2026-11-13T18:48:19Z"
+   "at": "2026-11-14T07:58:55Z"
   },
   "sbp_open": {
    "ok": true,
-   "at": "2026-11-13T18:48:21Z"
+   "at": "2026-11-14T07:59:12Z"
   },
   "psx": {
    "ok": true,
-   "at": "2026-11-13T18:48:50Z"
+   "at": "2026-11-14T07:59:39Z"
   },
   "funds": {
    "ok": true,
-   "at": "2026-11-13T18:48:53Z"
+   "at": "2026-11-14T07:59:41Z"
   },
   "cdns": {
    "ok": false,
-   "at": "2026-11-13T18:49:04Z",
+   "at": "2026-11-14T07:59:53Z",
    "error": "RuntimeError: https://savings.gov.pk/latest-profit-rates/: HTTPSConnectionPool(host='savings.gov.pk', port=443): Max retries exceeded with url: /latest-profit-rates/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)')))"
   },
   "fx": {
    "ok": true,
-   "at": "2026-11-13T18:49:04Z"
+   "at": "2026-11-14T07:59:53Z"
   },
   "pbs": {
    "ok": true,
-   "at": "2026-11-13T18:49:08Z"
+   "at": "2026-11-14T07:59:58Z"
   },
   "treasury": {
    "ok": true,
-   "at": "2026-11-13T18:49:27Z"
+   "at": "2026-11-14T08:00:16Z"
   },
   "nyfed": {
    "ok": true,
-   "at": "2026-11-13T18:49:28Z"
+   "at": "2026-11-14T08:00:16Z"
   },
   "bls": {
    "ok": false,
-   "at": "2026-11-13T18:49:28Z",
+   "at": "2026-11-14T08:00:16Z",
    "error": "ValueError: no year-ago CPI"
   }
  },
