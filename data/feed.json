@@ -1,15 +1,15 @@
 {
  "v": 1,
- "builtAt": "2026-11-15T09:54:42Z",
+ "builtAt": "2026-11-16T08:34:49Z",
  "market": {
-  "asOf": "2026-11-15",
+  "asOf": "2026-11-16",
   "fx": {
    "PKR": 1,
    "USD": 276.6036,
    "AED": 75.3175,
    "SAR": 73.761,
-   "EUR": 304.8479,
-   "GBP": 365.4185
+   "EUR": 304.874,
+   "GBP": 365.4674
   },
   "fxDate": "2026-11-13",
   "goldTola": 440636,
@@ -43,26 +43,26 @@
   },
   "nssDate": "2026-10-21",
   "npcUsd": 7.25,
-  "btcUsd": 66909,
-  "btcDate": "2026-11-14",
+  "btcUsd": 64733,
+  "btcDate": "2026-11-15",
   "fedFunds": 3.88,
   "ust10y": 5.15,
-  "kse100": 177873.87,
-  "kse100Date": "2026-11-13",
-  "kse100Ytd": 2.2,
+  "kse100": 179351.24,
+  "kse100Date": "2026-11-16",
+  "kse100Ytd": 3.0,
   "kse100Ath": 189167
  },
  "dates": {
   "fx": "2026-11-13",
   "goldTola": "2026-10-17",
   "silverTola": "2026-10-17",
-  "goldUsdOz": "2026-11-14",
-  "policyRate": "2026-11-15",
+  "goldUsdOz": "2026-11-15",
+  "policyRate": "2026-11-16",
   "cpi": "2026-09",
   "coreCpi": "2026-09",
   "tbill": "2026-11-11",
   "npcUsd": "2026-10-19",
-  "btcUsd": "2026-11-14",
+  "btcUsd": "2026-11-15",
   "fedFunds": "2026-11-12",
   "ust10y": "2026-11-13",
   "nss.BSC": "2026-10-21",
@@ -76,9 +76,9 @@
   "nss.SISA": "2026-10-21",
   "nss.SHUHADA": "2026-10-21",
   "nss.PRIZE": "2026-10-01",
-  "kse100": "2026-11-13",
-  "kse100Ytd": "2026-11-13",
-  "kse100Ath": "2026-11-13"
+  "kse100": "2026-11-16",
+  "kse100Ytd": "2026-11-16",
+  "kse100Ath": "2026-11-16"
  },
  "sources": {
   "seed": "Arzish built-in snapshot of 21 Oct 2026",
@@ -179,58 +179,58 @@
   "ceiling": 13.0,
   "floor": 11.0,
   "fxAll": {
-   "asOf": "2026-11-14",
+   "asOf": "2026-11-15",
    "rates": {
     "USD": 276.6036,
     "AED": 75.3175,
     "SAR": 73.761,
-    "EUR": 304.8479,
-    "GBP": 365.4185,
+    "EUR": 304.874,
+    "GBP": 365.4674,
     "QAR": 75.99,
-    "KWD": 888.1746,
-    "OMR": 718.2079,
-    "BHD": 735.6479,
-    "CAD": 193.8221,
-    "AUD": 187.402,
-    "CNY": 41.4611,
-    "JPY": 1.7323,
-    "CHF": 329.765,
-    "MYR": 67.6939,
-    "TRY": 5.4806,
-    "SGD": 214.7439,
-    "INR": 2.9343
+    "KWD": 889.1365,
+    "OMR": 718.34,
+    "BHD": 735.6478,
+    "CAD": 193.8239,
+    "AUD": 187.3588,
+    "CNY": 41.4593,
+    "JPY": 1.7321,
+    "CHF": 329.7376,
+    "MYR": 67.6897,
+    "TRY": 5.4847,
+    "SGD": 214.7625,
+    "INR": 2.9345
    }
   },
   "metals": {
-   "asOf": "2026-11-14",
+   "asOf": "2026-11-15",
    "goldUsdOz": 3874.43,
-   "goldTolaSpotPkr": 401869,
-   "silverUsdOz": 48.56,
-   "silverTolaSpotPkr": 5037
+   "goldTolaSpotPkr": 401785,
+   "silverUsdOz": 48.835,
+   "silverTolaSpotPkr": 5064
   },
   "crypto": {
-   "asOf": "2026-11-14",
+   "asOf": "2026-11-15",
    "usd": {
-    "BTC": 66909.24,
-    "ETH": 1897.54,
-    "USDT": 0.998788,
-    "USDC": 0.999573,
-    "BNB": 617.17,
-    "SOL": 75.6925,
-    "XRP": 0.992762,
-    "DOGE": 0.062921,
-    "ADA": 0.164232,
-    "TRX": 0.312215,
-    "DOT": 0.79759,
-    "LTC": 48.7882,
-    "LINK": 9.6399,
-    "AVAX": 8.0725,
-    "SHIB": 4.19e-06,
-    "BCH": 216.13,
-    "XLM": 0.14352,
-    "POL": 0.083151,
-    "SUI": 0.778201,
-    "PEPE": 4.19e-06
+    "BTC": 64732.62,
+    "ETH": 1804.83,
+    "USDT": 0.999325,
+    "USDC": 0.999558,
+    "BNB": 594.99,
+    "SOL": 71.0133,
+    "XRP": 0.96153,
+    "DOGE": 0.058204,
+    "ADA": 0.150398,
+    "TRX": 0.307201,
+    "DOT": 0.717942,
+    "LTC": 44.6411,
+    "LINK": 9.1319,
+    "AVAX": 7.2392,
+    "SHIB": 3.9e-06,
+    "BCH": 206.08,
+    "XLM": 0.138022,
+    "POL": 0.079999,
+    "SUI": 0.721308,
+    "PEPE": 3.95e-06
    }
   },
   "cdns": {
@@ -362,50 +362,50 @@
    "url": "https://www.sbp.org.pk/assets/document/open-market-closing-exchange-rates-13-November-2026.pdf"
   },
   "psx": {
-   "asOf": "2026-11-13",
-   "time": "18:08",
-   "state": "Closed",
-   "intraday": false,
+   "asOf": "2026-11-16",
+   "time": "13:30",
+   "state": "Open",
+   "intraday": true,
    "breadth": {
-    "advance": 284,
-    "decline": 184,
-    "unchanged": 29
+    "advance": 334,
+    "decline": 157,
+    "unchanged": 5
    },
    "indices": {
     "KSE100": {
-     "v": 177873.87,
-     "high": 179284.34,
-     "low": 176865.05,
-     "chg": 500.11,
-     "chgPct": 0.28
+     "v": 179351.24,
+     "high": 179692.98,
+     "low": 178315.62,
+     "chg": 1477.37,
+     "chgPct": 0.83
     },
     "ALLSHR": {
-     "v": 106712.06,
-     "high": 107530.67,
-     "low": 105910.42,
-     "chg": 589.19,
-     "chgPct": 0.56
+     "v": 107540.46,
+     "high": 107743.13,
+     "low": 107105.59,
+     "chg": 828.4,
+     "chgPct": 0.78
     },
     "KSE30": {
-     "v": 51887.2,
-     "high": 52402.32,
-     "low": 51557.64,
-     "chg": 152.18,
-     "chgPct": 0.29
+     "v": 52351.38,
+     "high": 52461.34,
+     "low": 52010.7,
+     "chg": 464.18,
+     "chgPct": 0.89
     },
     "KMI30": {
-     "v": 255042.46,
-     "high": 257851.08,
-     "low": 252719.08,
-     "chg": 1169.47,
-     "chgPct": 0.46
+     "v": 257619.47,
+     "high": 258429.48,
+     "low": 255794.71,
+     "chg": 2577.01,
+     "chgPct": 1.01
     },
     "KMIALLSHR": {
-     "v": 69162.84,
-     "high": 69728.98,
-     "low": 68383.22,
-     "chg": 584.42,
-     "chgPct": 0.85
+     "v": 69802.91,
+     "high": 69992.85,
+     "low": 69409.39,
+     "chg": 640.07,
+     "chgPct": 0.93
     }
    },
    "kse": {
@@ -424,44 +424,44 @@
  "status": {
   "sbp": {
    "ok": true,
-   "at": "2026-11-15T09:53:20Z"
+   "at": "2026-11-16T08:33:05Z"
   },
   "sbp_open": {
    "ok": true,
-   "at": "2026-11-15T09:53:43Z"
+   "at": "2026-11-16T08:33:41Z"
   },
   "psx": {
    "ok": true,
-   "at": "2026-11-15T09:54:05Z"
+   "at": "2026-11-16T08:34:10Z"
   },
   "funds": {
    "ok": true,
-   "at": "2026-11-15T09:54:08Z"
+   "at": "2026-11-16T08:34:12Z"
   },
   "cdns": {
    "ok": false,
-   "at": "2026-11-15T09:54:19Z",
+   "at": "2026-11-16T08:34:24Z",
    "error": "RuntimeError: https://savings.gov.pk/latest-profit-rates/: HTTPSConnectionPool(host='savings.gov.pk', port=443): Max retries exceeded with url: /latest-profit-rates/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)')))"
   },
   "fx": {
    "ok": true,
-   "at": "2026-11-15T09:54:19Z"
+   "at": "2026-11-16T08:34:24Z"
   },
   "pbs": {
    "ok": true,
-   "at": "2026-11-15T09:54:24Z"
+   "at": "2026-11-16T08:34:30Z"
   },
   "treasury": {
    "ok": true,
-   "at": "2026-11-15T09:54:42Z"
+   "at": "2026-11-16T08:34:48Z"
   },
   "nyfed": {
    "ok": true,
-   "at": "2026-11-15T09:54:42Z"
+   "at": "2026-11-16T08:34:48Z"
   },
   "bls": {
    "ok": false,
-   "at": "2026-11-15T09:54:42Z",
+   "at": "2026-11-16T08:34:49Z",
    "error": "ValueError: no year-ago CPI"
   }
  },
