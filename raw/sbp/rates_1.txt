@@ -366,15 +366,18 @@ Circulars
 Notifications
 Data Calendar
 Publications
+November 16 2026
+SBP Releases Annual Report on The State of Pakistan’s Economy
 November 10 2026
 Press Release of Workers’ Remittances in October 2026
 November 05 2026
 PUBLIC HOLIDAY
 November 03 2026
 SBP Launches Mojaloop Accelerator Program Under New Innovation Hub Collaboration Framework
-November 03 2026
-Pakistan Puts Women, Farmers and Small Businesses at the Heart of Its Green Finance Agenda: SBP Governor
 View all
+November 16, 2026
+SH&SFD Circular Letter No. 06 of 2026
+SMEConnect: Turnaround Time for Initial Contact with Applicants
 November 12, 2026
 BPRD Circular Letter No. 24 of 2026
 Currency Transaction Report (CTR) under Anti-Money Laundering Act, 2010
@@ -384,9 +387,6 @@ PUBLIC HOLIDAY
 October 30, 2026
 DMMD Circular Letter No. 13 of 2026
 RATE OF REMUNERATION ON SPECIAL CASH RESERVE ACCOUNT MAINTAINED WITH SBP AGAINST DEPOSITS RAISED UNDER FE-CIRCULAR 25 OF 1998
-October 29, 2026
-SH&SFD Circular No. 08 of 2026
-Launch of SMEConnect - the Centralized SME Financing Portal
 View all
 August 27, 2026
 No. PSP&OD/DPS/443723/2026
@@ -412,14 +412,14 @@ Governor’s Annual Report
 Monthly
 Inflation Monitor
 View all
-Not Later Than November 17 2026
-Nominal/Real Effective Exchange Rates Indices of Pak Rupees for Oct 26
-Not Later Than November 17 2026
-Export Receipts by Commodity and Groups for Oct 26
-Not Later Than November 17 2026
-Exports Receipts by all Commodities for Oct 26
-Not Later Than November 17 2026
-Exports Receipts by all Countries for Oct 26
+Not Later Than November 19 2026
+Repatriation of profit-dividend by country on Foreign Investment for Oct 26
+Not Later Than November 19 2026
+Repatriation of Profit/ Dividend on Foreign Investment by Sector for Oct 26
+Not Later Than November 19 2026
+Repatriation of Profit and Dividend on Foreign Investment - ISIC-IV Broad Structure for Oct 26
+Not Later Than November 20 2026
+Bank's Foreign Currency Deposits and Borrowings from Abroad for Oct 26
 View all
 Economic Data
 A snapshot of Pakistan’s key financial and economic indicators
@@ -446,10 +446,10 @@ Total Reserves
 Money Market Interest Rates
 Weighted - average overnight repo
 rate
-As on 12-Nov-26
-12.26%
+As on 13-Nov-26
+12.46%
 p.a.
-KIBOR As on 13- Nov - 26
+KIBOR As on 16- Nov - 26
 Tenor
 BID
 Offer
@@ -457,11 +457,11 @@ Offer
 12.03
 12.28
 6-M
-12.19
-12.44
+12.22
+12.47
 12-M
-12.3
-12.8
+12.31
+12.81
 Upcoming Auction
 PIB Auction (Fixed Rate)
 16-Dec-26
@@ -473,14 +473,14 @@ Coupon)
 Floating Rate PIB (Quarterly Coupon)
 04-Feb-25
 USD/ PKR Rates
-As on 13- Nov - 2026
+As on 16- Nov - 2026
 M2M Revaluation Rate
-276.6036
+276.5719
 Weighted Average Rate
 BID
-276.2921
+276.2672
 Offer
-276.7490
+276.7241
 Cut-off Rates in the Latest Auctions
 MTBs
 Tenor
