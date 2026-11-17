@@ -1,6 +1,6 @@
 {
  "v": 1,
- "builtAt": "2026-11-16T21:17:14Z",
+ "builtAt": "2026-11-17T09:44:26Z",
  "market": {
   "asOf": "2026-11-17",
   "fx": {
@@ -47,9 +47,9 @@
   "btcDate": "2026-11-16",
   "fedFunds": 3.88,
   "ust10y": 5.12,
-  "kse100": 178182.95,
-  "kse100Date": "2026-11-16",
-  "kse100Ytd": 2.4,
+  "kse100": 177790.14,
+  "kse100Date": "2026-11-17",
+  "kse100Ytd": 2.1,
   "kse100Ath": 189167
  },
  "dates": {
@@ -76,9 +76,9 @@
   "nss.SISA": "2026-10-21",
   "nss.SHUHADA": "2026-10-21",
   "nss.PRIZE": "2026-10-01",
-  "kse100": "2026-11-16",
-  "kse100Ytd": "2026-11-16",
-  "kse100Ath": "2026-11-16"
+  "kse100": "2026-11-17",
+  "kse100Ytd": "2026-11-17",
+  "kse100Ath": "2026-11-17"
  },
  "sources": {
   "seed": "Arzish built-in snapshot of 21 Oct 2026",
@@ -362,50 +362,50 @@
    "url": "https://www.sbp.org.pk/assets/document/open-market-closing-exchange-rates-16-November-2026.pdf"
   },
   "psx": {
-   "asOf": "2026-11-16",
-   "time": "18:10",
-   "state": "Closed",
-   "intraday": false,
+   "asOf": "2026-11-17",
+   "time": "14:39",
+   "state": "Open",
+   "intraday": true,
    "breadth": {
-    "advance": 260,
-    "decline": 211,
-    "unchanged": 27
+    "advance": 218,
+    "decline": 266,
+    "unchanged": 12
    },
    "indices": {
     "KSE100": {
-     "v": 178182.95,
-     "high": 179692.98,
-     "low": 178065.73,
-     "chg": 309.08,
-     "chgPct": 0.17
+     "v": 177790.14,
+     "high": 179450.96,
+     "low": 177776.42,
+     "chg": -392.81,
+     "chgPct": -0.22
     },
     "ALLSHR": {
-     "v": 106838.41,
-     "high": 107743.13,
-     "low": 106778.61,
-     "chg": 126.35,
-     "chgPct": 0.12
+     "v": 106601.27,
+     "high": 107427.74,
+     "low": 106601.27,
+     "chg": -237.14,
+     "chgPct": -0.22
     },
     "KSE30": {
-     "v": 51963.22,
-     "high": 52461.34,
-     "low": 51924.29,
-     "chg": 76.02,
-     "chgPct": 0.15
+     "v": 51827.38,
+     "high": 52395.76,
+     "low": 51819.64,
+     "chg": -135.84,
+     "chgPct": -0.26
     },
     "KMI30": {
-     "v": 255677.34,
-     "high": 258429.48,
-     "low": 255433.66,
-     "chg": 634.88,
-     "chgPct": 0.25
+     "v": 254618.42,
+     "high": 257963.07,
+     "low": 254521.73,
+     "chg": -1058.92,
+     "chgPct": -0.41
     },
     "KMIALLSHR": {
-     "v": 69299.82,
-     "high": 69992.85,
-     "low": 69273.36,
-     "chg": 136.98,
-     "chgPct": 0.2
+     "v": 69011.93,
+     "high": 69744.38,
+     "low": 68999.41,
+     "chg": -287.89,
+     "chgPct": -0.42
     }
    },
    "kse": {
@@ -424,44 +424,44 @@
  "status": {
   "sbp": {
    "ok": true,
-   "at": "2026-11-16T21:15:55Z"
+   "at": "2026-11-17T09:43:04Z"
   },
   "sbp_open": {
    "ok": true,
-   "at": "2026-11-16T21:16:08Z"
+   "at": "2026-11-17T09:43:20Z"
   },
   "psx": {
    "ok": true,
-   "at": "2026-11-16T21:16:36Z"
+   "at": "2026-11-17T09:43:47Z"
   },
   "funds": {
    "ok": true,
-   "at": "2026-11-16T21:16:39Z"
+   "at": "2026-11-17T09:43:50Z"
   },
   "cdns": {
    "ok": false,
-   "at": "2026-11-16T21:16:50Z",
+   "at": "2026-11-17T09:44:02Z",
    "error": "RuntimeError: https://savings.gov.pk/latest-profit-rates/: HTTPSConnectionPool(host='savings.gov.pk', port=443): Max retries exceeded with url: /latest-profit-rates/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)')))"
   },
   "fx": {
    "ok": true,
-   "at": "2026-11-16T21:16:50Z"
+   "at": "2026-11-17T09:44:02Z"
   },
   "pbs": {
    "ok": true,
-   "at": "2026-11-16T21:16:55Z"
+   "at": "2026-11-17T09:44:09Z"
   },
   "treasury": {
    "ok": true,
-   "at": "2026-11-16T21:17:13Z"
+   "at": "2026-11-17T09:44:25Z"
   },
   "nyfed": {
    "ok": true,
-   "at": "2026-11-16T21:17:13Z"
+   "at": "2026-11-17T09:44:25Z"
   },
   "bls": {
    "ok": false,
-   "at": "2026-11-16T21:17:14Z",
+   "at": "2026-11-17T09:44:26Z",
    "error": "ValueError: no year-ago CPI"
   }
  },
