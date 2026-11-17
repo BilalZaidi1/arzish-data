@@ -375,6 +375,9 @@ Press Release of Workers’ Remittances in October 2026
 November 05 2026
 PUBLIC HOLIDAY
 View all
+November 17, 2026
+EPD Circular Letter No. 17 of 2026
+Submission of Goods Declaration Number at the Time of filing Bank Debit Advice for Imports
 November 16, 2026
 SH&SFD Circular Letter No. 06 of 2026
 SMEConnect: Turnaround Time for Initial Contact with Applicants
@@ -384,9 +387,6 @@ Currency Transaction Report (CTR) under Anti-Money Laundering Act, 2010
 November 3, 2026
 BPRD Circular Letter No. 23 of 2026
 PUBLIC HOLIDAY
-October 30, 2026
-DMMD Circular Letter No. 13 of 2026
-RATE OF REMUNERATION ON SPECIAL CASH RESERVE ACCOUNT MAINTAINED WITH SBP AGAINST DEPOSITS RAISED UNDER FE-CIRCULAR 25 OF 1998
 View all
 August 27, 2026
 No. PSP&OD/DPS/443723/2026
@@ -412,14 +412,14 @@ Governor’s Annual Report
 Monthly
 Inflation Monitor
 View all
-Not Later Than November 19 2026
-Repatriation of profit-dividend by country on Foreign Investment for Oct 26
-Not Later Than November 19 2026
-Repatriation of Profit/ Dividend on Foreign Investment by Sector for Oct 26
-Not Later Than November 19 2026
-Repatriation of Profit and Dividend on Foreign Investment - ISIC-IV Broad Structure for Oct 26
 Not Later Than November 20 2026
 Bank's Foreign Currency Deposits and Borrowings from Abroad for Oct 26
+Not Later Than November 24 2026
+Monetary Aggregates (M3) for Oct26
+Not Later Than November 24 2026
+Depository Corporations Survey for Oct26
+Not Later Than November 24 2026
+Other Depository Corporations Survey for Oct26
 View all
 Economic Data
 A snapshot of Pakistan’s key financial and economic indicators
@@ -446,22 +446,22 @@ Total Reserves
 Money Market Interest Rates
 Weighted - average overnight repo
 rate
-As on 13-Nov-26
-12.46%
+As on 16-Nov-26
+12.26%
 p.a.
-KIBOR As on 16- Nov - 26
+KIBOR As on 17- Nov - 26
 Tenor
 BID
 Offer
 3-M
-12.03
-12.28
+12.02
+12.27
 6-M
-12.22
-12.47
+12.21
+12.46
 12-M
-12.31
-12.81
+12.29
+12.79
 Upcoming Auction
 PIB Auction (Fixed Rate)
 16-Dec-26
@@ -473,14 +473,14 @@ Coupon)
 Floating Rate PIB (Quarterly Coupon)
 04-Feb-25
 USD/ PKR Rates
-As on 16- Nov - 2026
+As on 17- Nov - 2026
 M2M Revaluation Rate
-276.5719
+276.5632
 Weighted Average Rate
 BID
-276.2672
+276.2504
 Offer
-276.7241
+276.7072
 Cut-off Rates in the Latest Auctions
 MTBs
 Tenor
