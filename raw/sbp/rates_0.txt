@@ -366,15 +366,18 @@ Circulars
 Notifications
 Data Calendar
 Publications
+November 18 2026
+Strengthening Economic Resilience, Export Competitiveness Key to Pakistan’s Sustainable Growth: Governor SBP
 November 17 2026
 SBP releases Governor’s Annual Report 2025-26
 November 16 2026
 SBP Releases Annual Report on The State of Pakistan’s Economy
 November 10 2026
 Press Release of Workers’ Remittances in October 2026
-November 05 2026
-PUBLIC HOLIDAY
 View all
+November 18, 2026
+SH&SFD Circular No. 09 of 2026
+Revisions in Guidelines for Builders/Developers Financing
 November 17, 2026
 EPD Circular Letter No. 17 of 2026
 Submission of Goods Declaration Number at the Time of filing Bank Debit Advice for Imports
@@ -384,9 +387,6 @@ SMEConnect: Turnaround Time for Initial Contact with Applicants
 November 12, 2026
 BPRD Circular Letter No. 24 of 2026
 Currency Transaction Report (CTR) under Anti-Money Laundering Act, 2010
-November 3, 2026
-BPRD Circular Letter No. 23 of 2026
-PUBLIC HOLIDAY
 View all
 August 27, 2026
 No. PSP&OD/DPS/443723/2026
@@ -412,14 +412,14 @@ Governor’s Annual Report
 Monthly
 Inflation Monitor
 View all
-Not Later Than November 20 2026
-Bank's Foreign Currency Deposits and Borrowings from Abroad for Oct 26
 Not Later Than November 24 2026
 Monetary Aggregates (M3) for Oct26
 Not Later Than November 24 2026
 Depository Corporations Survey for Oct26
 Not Later Than November 24 2026
 Other Depository Corporations Survey for Oct26
+Not Later Than November 25 2026
+Statistical Bulletin for Nov 26
 View all
 Economic Data
 A snapshot of Pakistan’s key financial and economic indicators
@@ -446,16 +446,16 @@ Total Reserves
 Money Market Interest Rates
 Weighted - average overnight repo
 rate
-As on 16-Nov-26
-12.26%
+As on 17-Nov-26
+12.46%
 p.a.
-KIBOR As on 17- Nov - 26
+KIBOR As on 18- Nov - 26
 Tenor
 BID
 Offer
 3-M
-12.02
-12.27
+12.01
+12.26
 6-M
 12.21
 12.46
@@ -473,14 +473,14 @@ Coupon)
 Floating Rate PIB (Quarterly Coupon)
 04-Feb-25
 USD/ PKR Rates
-As on 17- Nov - 2026
+As on 18- Nov - 2026
 M2M Revaluation Rate
-276.5632
+276.5514
 Weighted Average Rate
 BID
-276.2504
+276.245
 Offer
-276.7072
+276.7018
 Cut-off Rates in the Latest Auctions
 MTBs
 Tenor

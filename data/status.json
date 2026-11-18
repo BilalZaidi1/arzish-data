@@ -1,46 +1,48 @@
 {
- "builtAt": "2026-11-18T10:42:44Z",
+ "builtAt": "2026-11-18T19:47:31Z",
  "sources": {
   "sbp": {
    "ok": true,
-   "at": "2026-11-18T10:41:21Z"
+   "at": "2026-11-18T19:37:47Z"
   },
   "sbp_open": {
    "ok": true,
-   "at": "2026-11-18T10:41:34Z"
+   "at": "2026-11-18T19:38:01Z"
   },
   "psx": {
-   "ok": true,
-   "at": "2026-11-18T10:42:08Z"
+   "ok": false,
+   "at": "2026-11-18T19:38:07Z",
+   "error": "PSXConnectionError: PSX unreachable after 3 attempts: https://dps.psx.com.pk/trading-panel"
   },
   "funds": {
    "ok": true,
-   "at": "2026-11-18T10:42:11Z"
+   "at": "2026-11-18T19:38:11Z"
   },
   "cdns": {
    "ok": false,
-   "at": "2026-11-18T10:42:22Z",
-   "error": "RuntimeError: https://savings.gov.pk/latest-profit-rates/: HTTPSConnectionPool(host='savings.gov.pk', port=443): Max retries exceeded with url: /latest-profit-rates/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)')))"
+   "at": "2026-11-18T19:41:41Z",
+   "error": "RuntimeError: https://savings.gov.pk/latest-profit-rates/: HTTPSConnectionPool(host='savings.gov.pk', port=443): Read timed out. (read timeout=60)"
   },
   "fx": {
    "ok": true,
-   "at": "2026-11-18T10:42:22Z"
+   "at": "2026-11-18T19:41:41Z"
   },
   "pbs": {
-   "ok": true,
-   "at": "2026-11-18T10:42:28Z"
+   "ok": false,
+   "at": "2026-11-18T19:47:10Z",
+   "error": "RuntimeError: CPI press release not found"
   },
   "treasury": {
    "ok": true,
-   "at": "2026-11-18T10:42:44Z"
+   "at": "2026-11-18T19:47:30Z"
   },
   "nyfed": {
    "ok": true,
-   "at": "2026-11-18T10:42:44Z"
+   "at": "2026-11-18T19:47:31Z"
   },
   "bls": {
    "ok": false,
-   "at": "2026-11-18T10:42:44Z",
+   "at": "2026-11-18T19:47:31Z",
    "error": "ValueError: no year-ago CPI"
   }
  }
