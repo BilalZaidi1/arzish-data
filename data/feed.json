@@ -1,6 +1,6 @@
 {
  "v": 1,
- "builtAt": "2026-11-17T20:03:47Z",
+ "builtAt": "2026-11-18T09:05:35Z",
  "market": {
   "asOf": "2026-11-18",
   "fx": {
@@ -46,10 +46,10 @@
   "btcUsd": 64632,
   "btcDate": "2026-11-17",
   "fedFunds": 3.88,
-  "ust10y": 5.12,
-  "kse100": 177517.73,
-  "kse100Date": "2026-11-17",
-  "kse100Ytd": 2.0,
+  "ust10y": 5.1,
+  "kse100": 176189.52,
+  "kse100Date": "2026-11-18",
+  "kse100Ytd": 1.2,
   "kse100Ath": 189167
  },
  "dates": {
@@ -64,7 +64,7 @@
   "npcUsd": "2026-10-19",
   "btcUsd": "2026-11-17",
   "fedFunds": "2026-11-16",
-  "ust10y": "2026-11-16",
+  "ust10y": "2026-11-17",
   "nss.BSC": "2026-10-21",
   "nss.PBA": "2026-10-21",
   "nss.SSC": "2026-10-01",
@@ -76,9 +76,9 @@
   "nss.SISA": "2026-10-21",
   "nss.SHUHADA": "2026-10-21",
   "nss.PRIZE": "2026-10-01",
-  "kse100": "2026-11-17",
-  "kse100Ytd": "2026-11-17",
-  "kse100Ath": "2026-11-17"
+  "kse100": "2026-11-18",
+  "kse100Ytd": "2026-11-18",
+  "kse100Ath": "2026-11-18"
  },
  "sources": {
   "seed": "Arzish built-in snapshot of 21 Oct 2026",
@@ -312,12 +312,12 @@
    ]
   },
   "usTreasury": {
-   "asOf": "2026-11-16",
-   "m3": 4.34,
-   "y1": 4.62,
-   "y2": 4.83,
-   "y5": 4.93,
-   "y10": 5.12,
+   "asOf": "2026-11-17",
+   "m3": 4.33,
+   "y1": 4.6,
+   "y2": 4.8,
+   "y5": 4.9,
+   "y10": 5.1,
    "y30": 5.46
   },
   "usCpi": {
@@ -362,50 +362,50 @@
    "url": "https://www.sbp.org.pk/assets/document/open-market-closing-exchange-rates-17-November-2026.pdf"
   },
   "psx": {
-   "asOf": "2026-11-17",
-   "time": "18:41",
-   "state": "Closed",
-   "intraday": false,
+   "asOf": "2026-11-18",
+   "time": "14:04",
+   "state": "Open",
+   "intraday": true,
    "breadth": {
-    "advance": 189,
-    "decline": 276,
-    "unchanged": 32
+    "advance": 210,
+    "decline": 275,
+    "unchanged": 14
    },
    "indices": {
     "KSE100": {
-     "v": 177517.73,
-     "high": 179450.96,
-     "low": 177371.14,
-     "chg": -665.22,
-     "chgPct": -0.37
+     "v": 176189.52,
+     "high": 177719.05,
+     "low": 176053.63,
+     "chg": -1328.21,
+     "chgPct": -0.75
     },
     "ALLSHR": {
-     "v": 106459.83,
-     "high": 107427.74,
-     "low": 106421.51,
-     "chg": -378.58,
-     "chgPct": -0.35
+     "v": 105889.58,
+     "high": 106618.88,
+     "low": 105798.65,
+     "chg": -570.25,
+     "chgPct": -0.54
     },
     "KSE30": {
-     "v": 51753.06,
-     "high": 52395.76,
-     "low": 51696.87,
-     "chg": -210.16,
-     "chgPct": -0.4
+     "v": 51316.47,
+     "high": 51807.81,
+     "low": 51282.59,
+     "chg": -436.59,
+     "chgPct": -0.84
     },
     "KMI30": {
-     "v": 254385.85,
-     "high": 257963.07,
-     "low": 254172.09,
-     "chg": -1291.49,
-     "chgPct": -0.51
+     "v": 252213.34,
+     "high": 254717.28,
+     "low": 251863.03,
+     "chg": -2172.51,
+     "chgPct": -0.85
     },
     "KMIALLSHR": {
-     "v": 68928.03,
-     "high": 69744.38,
-     "low": 68909.33,
-     "chg": -371.79,
-     "chgPct": -0.54
+     "v": 68464.34,
+     "high": 69057.88,
+     "low": 68380.11,
+     "chg": -463.69,
+     "chgPct": -0.67
     }
    },
    "kse": {
@@ -424,44 +424,44 @@
  "status": {
   "sbp": {
    "ok": true,
-   "at": "2026-11-17T20:02:33Z"
+   "at": "2026-11-18T09:04:09Z"
   },
   "sbp_open": {
    "ok": true,
-   "at": "2026-11-17T20:02:45Z"
+   "at": "2026-11-18T09:04:23Z"
   },
   "psx": {
    "ok": true,
-   "at": "2026-11-17T20:03:13Z"
+   "at": "2026-11-18T09:04:58Z"
   },
   "funds": {
    "ok": true,
-   "at": "2026-11-17T20:03:15Z"
+   "at": "2026-11-18T09:05:01Z"
   },
   "cdns": {
    "ok": false,
-   "at": "2026-11-17T20:03:26Z",
+   "at": "2026-11-18T09:05:11Z",
    "error": "RuntimeError: https://savings.gov.pk/latest-profit-rates/: HTTPSConnectionPool(host='savings.gov.pk', port=443): Max retries exceeded with url: /latest-profit-rates/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)')))"
   },
   "fx": {
    "ok": true,
-   "at": "2026-11-17T20:03:26Z"
+   "at": "2026-11-18T09:05:11Z"
   },
   "pbs": {
    "ok": true,
-   "at": "2026-11-17T20:03:30Z"
+   "at": "2026-11-18T09:05:18Z"
   },
   "treasury": {
    "ok": true,
-   "at": "2026-11-17T20:03:47Z"
+   "at": "2026-11-18T09:05:35Z"
   },
   "nyfed": {
    "ok": true,
-   "at": "2026-11-17T20:03:47Z"
+   "at": "2026-11-18T09:05:35Z"
   },
   "bls": {
    "ok": false,
-   "at": "2026-11-17T20:03:47Z",
+   "at": "2026-11-18T09:05:35Z",
    "error": "ValueError: no year-ago CPI"
   }
  },
