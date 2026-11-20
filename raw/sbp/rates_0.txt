@@ -413,13 +413,13 @@ Monthly
 Inflation Monitor
 View all
 Not Later Than November 24 2026
-Monetary Aggregates (M3) for Oct26
-Not Later Than November 24 2026
-Depository Corporations Survey for Oct26
-Not Later Than November 24 2026
 Other Depository Corporations Survey for Oct26
 Not Later Than November 25 2026
 Statistical Bulletin for Nov 26
+Not Later Than November 25 2026
+Indicative Agriculture Credit Targets and Monthly Analysis Table for Oct 26
+Not Later Than November 27 2026
+Islamic Banking Bulletin for Sep 26
 View all
 Economic Data
 A snapshot of Pakistan’s key financial and economic indicators
@@ -446,22 +446,22 @@ Total Reserves
 Money Market Interest Rates
 Weighted - average overnight repo
 rate
-As on 18-Nov-26
-12.55%
+As on 19-Nov-26
+12.39%
 p.a.
-KIBOR As on 19- Nov - 26
+KIBOR As on 20- Nov - 26
 Tenor
 BID
 Offer
 3-M
-12.03
-12.28
+12.05
+12.3
 6-M
-12.19
-12.44
+12.21
+12.46
 12-M
-12.32
-12.82
+12.33
+12.83
 Upcoming Auction
 PIB Auction (Fixed Rate)
 16-Dec-26
@@ -473,14 +473,14 @@ Coupon)
 Floating Rate PIB (Quarterly Coupon)
 04-Feb-25
 USD/ PKR Rates
-As on 19- Nov - 2026
+As on 20- Nov - 2026
 M2M Revaluation Rate
-276.5205
+276.5132
 Weighted Average Rate
 BID
-276.2081
+276.2004
 Offer
-276.6649
+276.6572
 Cut-off Rates in the Latest Auctions
 MTBs
 Tenor
