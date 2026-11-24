@@ -1,8 +1,8 @@
 {
  "v": 1,
- "builtAt": "2026-11-24T12:56:41Z",
+ "builtAt": "2026-11-24T21:33:47Z",
  "market": {
-  "asOf": "2026-11-24",
+  "asOf": "2026-11-25",
   "fx": {
    "PKR": 1,
    "USD": 276.4708,
@@ -46,7 +46,7 @@
   "btcUsd": 61459,
   "btcDate": "2026-11-23",
   "fedFunds": 3.88,
-  "ust10y": 4.92,
+  "ust10y": 4.91,
   "kse100": 178542.28,
   "kse100Date": "2026-11-24",
   "kse100Ytd": 2.6,
@@ -57,14 +57,14 @@
   "goldTola": "2026-10-17",
   "silverTola": "2026-10-17",
   "goldUsdOz": "2026-11-23",
-  "policyRate": "2026-11-24",
+  "policyRate": "2026-11-25",
   "cpi": "2026-09",
   "coreCpi": "2026-09",
   "tbill": "2026-11-11",
   "npcUsd": "2026-10-19",
   "btcUsd": "2026-11-23",
-  "fedFunds": "2026-11-20",
-  "ust10y": "2026-11-23",
+  "fedFunds": "2026-11-23",
+  "ust10y": "2026-11-24",
   "nss.BSC": "2026-10-21",
   "nss.PBA": "2026-10-21",
   "nss.SSC": "2026-10-01",
@@ -312,13 +312,13 @@
    ]
   },
   "usTreasury": {
-   "asOf": "2026-11-23",
-   "m3": 4.37,
-   "y1": 4.57,
+   "asOf": "2026-11-24",
+   "m3": 4.36,
+   "y1": 4.59,
    "y2": 4.63,
-   "y5": 4.74,
-   "y10": 4.92,
-   "y30": 5.29
+   "y5": 4.69,
+   "y10": 4.91,
+   "y30": 5.3
   },
   "usCpi": {
    "yoy": 3.74,
@@ -363,7 +363,7 @@
   },
   "psx": {
    "asOf": "2026-11-24",
-   "time": "17:34",
+   "time": "18:22",
    "state": "Closed",
    "intraday": false,
    "breadth": {
@@ -424,44 +424,44 @@
  "status": {
   "sbp": {
    "ok": true,
-   "at": "2026-11-24T12:55:22Z"
+   "at": "2026-11-24T21:32:25Z"
   },
   "sbp_open": {
    "ok": true,
-   "at": "2026-11-24T12:55:38Z"
+   "at": "2026-11-24T21:32:49Z"
   },
   "psx": {
    "ok": true,
-   "at": "2026-11-24T12:56:03Z"
+   "at": "2026-11-24T21:33:11Z"
   },
   "funds": {
    "ok": true,
-   "at": "2026-11-24T12:56:06Z"
+   "at": "2026-11-24T21:33:13Z"
   },
   "cdns": {
    "ok": false,
-   "at": "2026-11-24T12:56:16Z",
+   "at": "2026-11-24T21:33:24Z",
    "error": "RuntimeError: https://savings.gov.pk/latest-profit-rates/: HTTPSConnectionPool(host='savings.gov.pk', port=443): Max retries exceeded with url: /latest-profit-rates/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)')))"
   },
   "fx": {
    "ok": true,
-   "at": "2026-11-24T12:56:16Z"
+   "at": "2026-11-24T21:33:24Z"
   },
   "pbs": {
    "ok": true,
-   "at": "2026-11-24T12:56:21Z"
+   "at": "2026-11-24T21:33:28Z"
   },
   "treasury": {
    "ok": true,
-   "at": "2026-11-24T12:56:40Z"
+   "at": "2026-11-24T21:33:47Z"
   },
   "nyfed": {
    "ok": true,
-   "at": "2026-11-24T12:56:40Z"
+   "at": "2026-11-24T21:33:47Z"
   },
   "bls": {
    "ok": false,
-   "at": "2026-11-24T12:56:41Z",
+   "at": "2026-11-24T21:33:47Z",
    "error": "ValueError: no year-ago CPI"
   }
  },
