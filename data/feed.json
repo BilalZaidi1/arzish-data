@@ -1,8 +1,8 @@
 {
  "v": 1,
- "builtAt": "2026-11-25T11:43:09Z",
+ "builtAt": "2026-11-25T20:41:59Z",
  "market": {
-  "asOf": "2026-11-25",
+  "asOf": "2026-11-26",
   "fx": {
    "PKR": 1,
    "USD": 276.4644,
@@ -57,13 +57,13 @@
   "goldTola": "2026-10-17",
   "silverTola": "2026-10-17",
   "goldUsdOz": "2026-11-24",
-  "policyRate": "2026-11-25",
+  "policyRate": "2026-11-26",
   "cpi": "2026-09",
   "coreCpi": "2026-09",
   "tbill": "2026-11-11",
   "npcUsd": "2026-10-19",
   "btcUsd": "2026-11-24",
-  "fedFunds": "2026-11-23",
+  "fedFunds": "2026-11-24",
   "ust10y": "2026-11-24",
   "nss.BSC": "2026-10-21",
   "nss.PBA": "2026-10-21",
@@ -334,36 +334,36 @@
   "openMarket": {
    "rates": {
     "USD": {
-     "buy": 277.21,
-     "sell": 278.41
+     "buy": 277.18,
+     "sell": 278.38
     },
     "EUR": {
-     "buy": 302.27,
-     "sell": 305.24
+     "buy": 302.88,
+     "sell": 305.94
     },
     "GBP": {
-     "buy": 361.43,
-     "sell": 365.11
+     "buy": 362.16,
+     "sell": 365.62
     },
     "AED": {
-     "buy": 75.5,
-     "sell": 76.12
+     "buy": 75.53,
+     "sell": 76.11
     },
     "SAR": {
-     "buy": 73.91,
-     "sell": 74.46
+     "buy": 73.93,
+     "sell": 74.44
     },
     "JPY": {
      "buy": 1.73,
-     "sell": 1.79
+     "sell": 1.8
     }
    },
-   "asOf": "2026-11-24",
-   "url": "https://www.sbp.org.pk/assets/document/open-market-closing-exchange-rates-24-November-2026.pdf"
+   "asOf": "2026-11-25",
+   "url": "https://www.sbp.org.pk/assets/document/open-market-closing-exchange-rates-25-November-2026.pdf"
   },
   "psx": {
    "asOf": "2026-11-25",
-   "time": "16:37",
+   "time": "18:22",
    "state": "Closed",
    "intraday": false,
    "breadth": {
@@ -424,44 +424,44 @@
  "status": {
   "sbp": {
    "ok": true,
-   "at": "2026-11-25T11:41:51Z"
+   "at": "2026-11-25T20:40:44Z"
   },
   "sbp_open": {
    "ok": true,
-   "at": "2026-11-25T11:42:05Z"
+   "at": "2026-11-25T20:40:58Z"
   },
   "psx": {
    "ok": true,
-   "at": "2026-11-25T11:42:34Z"
+   "at": "2026-11-25T20:41:21Z"
   },
   "funds": {
    "ok": true,
-   "at": "2026-11-25T11:42:36Z"
+   "at": "2026-11-25T20:41:24Z"
   },
   "cdns": {
    "ok": false,
-   "at": "2026-11-25T11:42:47Z",
+   "at": "2026-11-25T20:41:35Z",
    "error": "RuntimeError: https://savings.gov.pk/latest-profit-rates/: HTTPSConnectionPool(host='savings.gov.pk', port=443): Max retries exceeded with url: /latest-profit-rates/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)')))"
   },
   "fx": {
    "ok": true,
-   "at": "2026-11-25T11:42:47Z"
+   "at": "2026-11-25T20:41:35Z"
   },
   "pbs": {
    "ok": true,
-   "at": "2026-11-25T11:42:51Z"
+   "at": "2026-11-25T20:41:39Z"
   },
   "treasury": {
    "ok": true,
-   "at": "2026-11-25T11:43:09Z"
+   "at": "2026-11-25T20:41:58Z"
   },
   "nyfed": {
    "ok": true,
-   "at": "2026-11-25T11:43:09Z"
+   "at": "2026-11-25T20:41:58Z"
   },
   "bls": {
    "ok": false,
-   "at": "2026-11-25T11:43:09Z",
+   "at": "2026-11-25T20:41:59Z",
    "error": "ValueError: no year-ago CPI"
   }
  },
