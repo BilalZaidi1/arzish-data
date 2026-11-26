@@ -339,7 +339,6 @@ TESTING NEW TECHNOLOGIES, PROMOTING INNOVATION, FOSTERING ECONOMIC GROWTH
 Read more
 about
 TESTING NEW TECHNOLOGIES, PROMOTING INNOVATION, FOSTERING ECONOMIC GROWTH
-Call for Papers
 National Conference on Pakistan Economy
 Read More
 about
@@ -412,14 +411,14 @@ Governor’s Annual Report
 Monthly
 Inflation Monitor
 View all
-Not Later Than November 30 2026
-Payment Systems Review for Sep 26
-Not Later Than November 30 2026
-International Reserves and Foreign Currency Liquidity for Oct 26
-Not Later Than November 30 2026
-SBP's FX interventions in Interbank Fx Market for Aug-26
 Next day after release of PBS data
 Production of Selected Large-scale Manufacturing Items for Sep 26
+7 weeks after the end of Quarter
+Non Performing Loans for Sep 26
+7 weeks after the end of Quarter
+Financial Soundness Indicators and Quarterly Compendium of the Banking System for Sep 26
+Not Later Than 5 days from close of week i.e. Sunday
+Statement of Affairs
 View all
 Economic Data
 A snapshot of Pakistan’s key financial and economic indicators
@@ -436,32 +435,32 @@ SBP Overnight Reverse
 11.00%
 p.a.
 Liquid Foreign Exchange Reserves (USD million)
-As on 13- November - 2026
+As on 20- November - 2026
 SBP’s Reserves
-21,587.0
+21,595.0
 Bank’s Reserves
-5,187.9
+5,154.5
 Total Reserves
-26,774.9
+26,749.5
 Money Market Interest Rates
 Weighted - average overnight repo
 rate
-As on 24-Nov-26
-12.25%
+As on 25-Nov-26
+12.22%
 p.a.
-KIBOR As on 25- Nov - 26
+KIBOR As on 26- Nov - 26
 Tenor
 BID
 Offer
 3-M
-12.08
-12.33
+12.03
+12.28
 6-M
-12.24
-12.49
+12.23
+12.48
 12-M
-12.35
-12.85
+12.38
+12.88
 Upcoming Auction
 PIB Auction (Fixed Rate)
 16-Dec-26
@@ -473,14 +472,14 @@ Coupon)
 Floating Rate PIB (Quarterly Coupon)
 04-Feb-25
 USD/ PKR Rates
-As on 25- Nov - 2026
+As on 26- Nov - 2026
 M2M Revaluation Rate
-276.4644
+276.4515
 Weighted Average Rate
 BID
-276.1504
+276.1475
 Offer
-276.6072
+276.6044
 Cut-off Rates in the Latest Auctions
 MTBs
 Tenor
