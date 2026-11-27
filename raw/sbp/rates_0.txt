@@ -485,14 +485,14 @@ MTBs
 Tenor
 Cut-off Yield
 1-M
-11.8838%
+11.6980%
 3-M
-11.9999%
+11.9990%
 6-M
-12.1900%
+12.2954%
 12-M
-12.4100%
-(as on Nov 11, 2026)
+12.5240%
+(as on Nov 25, 2026)
 Fixed - Rate PIB
 Tenor
 Cut-off Yield
