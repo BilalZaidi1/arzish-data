@@ -365,27 +365,27 @@ Circulars
 Notifications
 Data Calendar
 Publications
+November 27 2026
+The State Bank of Pakistan (SBP) to Issue Rs. 200/- Commemorative Coin to celebrate 200th Birth Anniversary of Pujya Mata Sahib Hasi Devi
 November 18 2026
 Strengthening Economic Resilience, Export Competitiveness Key to Pakistan’s Sustainable Growth: Governor SBP
 November 17 2026
 SBP releases Governor’s Annual Report 2025-26
 November 16 2026
 SBP Releases Annual Report on The State of Pakistan’s Economy
-November 10 2026
-Press Release of Workers’ Remittances in October 2026
 View all
+November 26, 2026
+SH&SFD Circular No. 10 of 2026
+Revision in Prime Minister's Youth Business & Agriculture Loan Scheme (PMYB&ALS)
+November 23, 2026
+EPD Circular Letter No. 18 of 2026
+Amendment to Instructions Regarding Payment of commission/brokerage/discount and Retention of Export Proceeds
+November 18, 2026
+SH&SFD Circular No. 09 of 2026
+Revisions in Guidelines for Builders/Developers Financing
 November 17, 2026
 EPD Circular Letter No. 17 of 2026
 Submission of Goods Declaration Number at the Time of filing Bank Debit Advice for Imports
-November 16, 2026
-SH&SFD Circular Letter No. 06 of 2026
-SMEConnect: Turnaround Time for Initial Contact with Applicants
-November 12, 2026
-BPRD Circular Letter No. 24 of 2026
-Currency Transaction Report (CTR) under Anti-Money Laundering Act, 2010
-November 3, 2026
-BPRD Circular Letter No. 23 of 2026
-PUBLIC HOLIDAY
 View all
 November 20, 2026
 No. BPRD (LD-01)/602/2026/1266425
@@ -445,22 +445,22 @@ Total Reserves
 Money Market Interest Rates
 Weighted - average overnight repo
 rate
-As on 25-Nov-26
-12.22%
+As on 26-Nov-26
+11.47%
 p.a.
-KIBOR As on 26- Nov - 26
+KIBOR As on 27- Nov - 26
 Tenor
 BID
 Offer
 3-M
-12.03
-12.28
+12.02
+12.27
 6-M
-12.23
-12.48
+12.22
+12.47
 12-M
-12.38
-12.88
+12.36
+12.86
 Upcoming Auction
 PIB Auction (Fixed Rate)
 16-Dec-26
@@ -472,14 +472,14 @@ Coupon)
 Floating Rate PIB (Quarterly Coupon)
 04-Feb-25
 USD/ PKR Rates
-As on 26- Nov - 2026
+As on 27- Nov - 2026
 M2M Revaluation Rate
-276.4515
+276.4228
 Weighted Average Rate
 BID
-276.1475
+276.1102
 Offer
-276.6044
+276.5671
 Cut-off Rates in the Latest Auctions
 MTBs
 Tenor
@@ -589,13 +589,13 @@ Press Conferences/Videos
 Podcasts
 79th Independence Day of Pakistan
 View More
+National Conference on Pakistan Economy
+View More
 Launch Of InvestPak
 View More
 25th Zahid Husain Memorial Lecture
 View More
 Agriculture Credit Advisory Committee
-View More
-Cyber Security week
 View More
 View all
 View all
